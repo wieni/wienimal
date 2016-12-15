@@ -1,0 +1,44 @@
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    padding: 10px 15px;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    .caret {
+        margin-left: 0;
+    }
+
+    &.dropdown-toggle {
+        border-left: 1px solid rgba(#fff, .15);
+    }
+}
+
+.button--small {
+    font-size: 14px;
+}
+
+@each $name, $color in $button-variants {
+    .button--#{$name} {
+        background: $color;
+        color: color-contrast($color);
+
+        &:focus,
+        &:hover {
+            background: lighten($color, 10%);
+        }
+    }
+}

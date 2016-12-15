@@ -1,0 +1,14 @@
+.tabs {
+    background-color: darken($content-header-bg, 5%);
+
+    a {
+        transition: background-color .25s ease-in-out;
+        padding: 15px 10px !important;
+
+        &:hover,
+        &:focus {
+            background-color: darken($content-header-bg, 10%);
+            text-decoration: none;
+        }
+    }
+}

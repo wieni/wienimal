@@ -1,0 +1,36 @@
+table {
+    font-size: 15px;
+}
+
+thead th {
+    border: none;
+    color: #909090;
+    text-transform: none;
+    font-weight: 600;
+}
+
+thead th.is-active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #E6E4DF;
+    border-left: 1px solid #E6E4DF;
+    border-right: 1px solid #E6E4DF;
+}
+
+th.is-active > a,
+th.is-active > a:hover {
+    color: #333;
+}
+
+th > a:hover {
+    text-decoration: underline;
+}
+
+th > a:after,
+th.is-active > a:after {
+    display: none;
+}
+
+thead > tr {
+    border-bottom: 1px solid #E6E4DF;
+}

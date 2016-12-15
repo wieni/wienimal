@@ -9,8 +9,5 @@ npm-debug.log*
 # Dependency directories
 node_modules
 
-# The actual build.
-css
-
 # Optional npm cache directory
 .npm

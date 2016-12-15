@@ -1,11 +1,9 @@
 name: Wienimal
 type: theme
-base theme: false
 description: 'A nice admin experience for Drupal 8, finally.'
-package: Wieni
+base theme: adminimal_theme
 version: VERSION
 core: 8.x
-base theme: adminimal_theme
 
 # Regions from adminimal theme, since regions are not inherited from the base theme.
 regions:
@@ -20,3 +18,30 @@ regions:
   sidebar_first: 'First sidebar'
 regions_hidden:
   - sidebar_first
+
+libraries:
+  - wienimal/global-styling
+  - wienimal/dropdown
+
+libraries-override:
+  adminimal_theme/global-styling:
+    css:
+      base:
+        css/adminimal.css: css/adminimal.css
+
+  classy/base:
+    css:
+      component:
+        css/components/button.css: false
+
+  classy/dropbutton:
+    css:
+      component:
+        css/components/dropbutton.css: false
+
+  seven/global-styling:
+    css:
+      component:
+        css/components/buttons.css: false
+        css/components/dropbutton.component.css: false
+        css/components/form.css: false

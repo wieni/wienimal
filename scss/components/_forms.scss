@@ -1,0 +1,32 @@
+.form-autocomplete,
+.form-text,
+.form-tel,
+.form-email,
+.form-url,
+.form-search,
+.form-number,
+.form-color,
+.form-file,
+.form-date,
+.form-time,
+.form-textarea {
+    padding: 10px 15px;
+    max-width: 100%;
+    border: 1px solid #b8b8b8;
+    background: #fff;
+    color: #333;
+    background: #fcfcfa;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .125);
+    font-size: 1em;
+    color: #595959;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: #fff;
+    }
+}

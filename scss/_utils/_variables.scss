@@ -1,0 +1,24 @@
+$base-font-family:
+    // Safari for OS X and iOS (San Francisco)
+    -apple-system,
+        // Chrome for OS X (San Francisco)
+    BlinkMacSystemFont,
+        // Windows
+    "Segoe UI",
+        // Android
+    "Roboto",
+        // Basic web fallback
+    "Helvetica Neue", Arial, sans-serif !default;
+
+// The default colors used in text.
+$dark-text-default: #393A45 !default;
+$light-text-default: #FFFFFF !default;
+
+// Buttons
+$button-variants: (
+    'primary': #3B495D,
+    'danger': #CA5A41,
+);
+
+// Content header
+$content-header-bg: #D7DBDF;

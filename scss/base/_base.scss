@@ -1,0 +1,9 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: $base-font-family;
+    font-size: 16px;
+}
+
+a {
+    color: darken(#588FCF, 15%);
+}

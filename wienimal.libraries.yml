@@ -3,3 +3,14 @@ ionicons:
   css:
     base:
       http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css: { external: true }
+
+global-styling:
+  css:
+    theme:
+      css/wienimal.css: {}
+
+dropdown:
+  js:
+    js/dropdown.js: {}
+  dependencies:
+    - core/jquery
