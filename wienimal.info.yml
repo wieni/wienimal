@@ -1,0 +1,22 @@
+name: Wienimal
+type: theme
+base theme: false
+description: 'A nice admin experience for Drupal 8, finally.'
+package: Wieni
+version: VERSION
+core: 8.x
+base theme: adminimal_theme
+
+# Regions from adminimal theme, since regions are not inherited from the base theme.
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first
