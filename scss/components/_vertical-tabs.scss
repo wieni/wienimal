@@ -1,0 +1,118 @@
+/**
+ * @file
+ * Override of misc/vertical-tabs.css.
+ */
+
+$vertical-tabs-size: 240px;
+$vertical-tabs-bg: #3B495D;
+
+.vertical-tabs {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.vertical-tabs__menu {
+    float: left; /* LTR */
+    width: $vertical-tabs-size;
+    margin: 0 -100% -1px 0; /* LTR */
+    padding: 0;
+    line-height: 1;
+    border-right: 0;
+}
+
+.vertical-tabs__menu-item {
+    position: relative;
+    display: block;
+    background-color: $vertical-tabs-bg;
+    transition: background-color .15s ease-in-out;
+}
+
+.vertical-tabs__menu-item.is-selected {
+    z-index: 1;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+
+.vertical-tabs__menu-item:focus,
+.vertical-tabs__menu-item:active {
+    z-index: 2;
+}
+
+.vertical-tabs__menu-item a {
+    color: rgba(#FFF, .8);
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 15px;
+    text-decoration: none;
+    transition: padding-left .2s ease-in-out;
+
+
+}
+
+.vertical-tabs__menu-item a:hover,
+.vertical-tabs__menu-item a:focus {
+    color: #FFF;
+}
+
+.vertical-tabs__menu-item a:focus {
+    outline: none;
+}
+
+.vertical-tabs__menu-item a:focus .vertical-tabs__menu-item-title {
+    text-decoration: underline;
+}
+
+.vertical-tabs__menu-item a:active .vertical-tabs__menu-item-title,
+.vertical-tabs__menu-item.is-selected a:focus .vertical-tabs__menu-item-title {
+    text-decoration: none;
+}
+
+.vertical-tabs__menu-item.is-selected a {
+    color: #333;
+    border-bottom: none;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.vertical-tabs__menu-item.is-selected a:hover,
+.vertical-tabs__menu-item.is-selected a:focus {
+    color: inherit;
+}
+
+.vertical-tabs__panes {
+    margin: 0 0 0 $vertical-tabs-size;
+    padding: 15px 30px;
+    width: calc(100% - #{$vertical-tabs-size});
+    background: #fff;
+
+    .details-wrapper {
+        box-sizing: border-box;
+        padding: 0 15px 0 0;
+    }
+}
+
+.vertical-tabs__panes:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vertical-tabs__pane {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #595959;
+}
+
+.vertical-tabs__menu-item-summary {
+    display: block;
+    padding-top: 0.4em;
+    color: #666;
+}
+
+.vertical-tabs__pane > summary {
+    display: none;
+}

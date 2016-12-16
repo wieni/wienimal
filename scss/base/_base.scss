@@ -1,7 +1,18 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box !important;
+}
+
 body {
-    -webkit-font-smoothing: antialiased;
     font-family: $base-font-family;
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FBFAF8;
 }
 
 a {

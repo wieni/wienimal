@@ -14,3 +14,7 @@ dropdown:
     js/dropdown.js: {}
   dependencies:
     - core/jquery
+
+sticky:
+  js:
+    js/sticky.js: {}

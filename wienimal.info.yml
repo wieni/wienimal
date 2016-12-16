@@ -22,6 +22,10 @@ regions_hidden:
 libraries:
   - wienimal/global-styling
   - wienimal/dropdown
+  - wienimal/sticky
+
+stylesheets-remove:
+  - '@stable/css/node/node.module.css'
 
 libraries-override:
   adminimal_theme/global-styling:
@@ -45,3 +49,8 @@ libraries-override:
         css/components/buttons.css: false
         css/components/dropbutton.component.css: false
         css/components/form.css: false
+
+  seven/vertical-tabs:
+    css:
+      component:
+        css/components/vertical-tabs.css: false
