@@ -14,6 +14,8 @@ $base-font-family:
 $dark-text-default: #393A45 !default;
 $light-text-default: #FFFFFF !default;
 
+$default-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
 // Buttons
 $button-variants: (
     'primary': #3B495D,
@@ -21,7 +23,8 @@ $button-variants: (
 );
 
 // Content header
-$content-header-bg: #D7DBDF;
+$content-header-bg: #2A323C;
+$content-header-color: #FFFFFF;
 
 // Vertical tabs
 $vertical-tabs-bg-color: #D7DBDF;

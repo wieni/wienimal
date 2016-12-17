@@ -4,7 +4,8 @@
  */
 
 $vertical-tabs-size: 240px;
-$vertical-tabs-bg: #3B495D;
+$vertical-tabs-bg: #fff;
+$vertical-tabs-active-bg: #3B495D;
 
 .vertical-tabs {
     position: relative;
@@ -19,6 +20,7 @@ $vertical-tabs-bg: #3B495D;
     padding: 0;
     line-height: 1;
     border-right: 0;
+    box-shadow: $default-box-shadow;
 }
 
 .vertical-tabs__menu-item {
@@ -32,7 +34,7 @@ $vertical-tabs-bg: #3B495D;
     z-index: 1;
     overflow-x: hidden;
     width: 100%;
-    background-color: #fff;
+    background-color: $vertical-tabs-active-bg;
 }
 
 .vertical-tabs__menu-item:focus,
@@ -48,8 +50,6 @@ $vertical-tabs-bg: #3B495D;
     padding: 15px;
     text-decoration: none;
     transition: padding-left .2s ease-in-out;
-
-
 }
 
 .vertical-tabs__menu-item a:hover,

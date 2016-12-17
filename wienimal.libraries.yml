@@ -18,3 +18,5 @@ dropdown:
 sticky:
   js:
     js/sticky.js: {}
+  dependencies:
+    - field_group/element.horizontal_tabs

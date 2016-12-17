@@ -1,4 +1,11 @@
 .content-header {
     background-color: $content-header-bg;
-    padding: 1rem 0 0;
+    color: $content-header-color;
+    padding: 1rem 0 3rem;
+}
+
+.page-title {
+    font-size: 1.4rem;
+    line-height: 2;
+    font-weight: 600;
 }

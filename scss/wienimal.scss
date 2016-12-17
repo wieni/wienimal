@@ -14,6 +14,8 @@
     'components/tabs',
     'components/vertical-tabs';
 
+@import 'layout/layout';
+
 /* Some dirty hacks here … */
 .js-form-submit {
     @extend .button--primary;

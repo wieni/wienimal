@@ -3,16 +3,6 @@
 @import '_utils/variables';
 @import '_utils/functions';
 
-.adminimal h1,
-.adminimal .heading-a {
-    font-weight: 300;
-    margin-bottom: 19px;
-    margin-bottom: 1rem;
-    font-size: 2.35em;
-    line-height: 1.2em;
-    color: #333;
-}
-
 .adminimal.toolbar-tray-open.toolbar-fixed.toolbar-horizontal {
     padding-top: 4rem !important;
 }
