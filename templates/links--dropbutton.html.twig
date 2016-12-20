@@ -34,7 +34,7 @@
 {% if links -%}
     <div class="btn-group">
         {%- if links|first.link -%}
-        {{ link(links|first.link['#title'], links|first.link['#url'], {'class': ['button', 'button--primary']}) }}
+            {{ link(links|first.link['#title'], links|first.link['#url'], {'class': ['button', 'button--primary']}) }}
         {%- else -%}
             {{ links|first.text }}
         {%- endif -%}

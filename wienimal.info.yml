@@ -37,6 +37,7 @@ libraries-override:
     css:
       component:
         css/components/button.css: false
+        css/components/tabs.css: false
 
   classy/dropbutton:
     css:
@@ -46,11 +47,18 @@ libraries-override:
   seven/global-styling:
     css:
       component:
+        css/components/admin-list.css: false
         css/components/buttons.css: false
         css/components/dropbutton.component.css: false
         css/components/form.css: false
+        css/components/tabs.css: false
 
   seven/vertical-tabs:
     css:
       component:
         css/components/vertical-tabs.css: false
+
+  field_group/element.horizontal_tabs:
+    css:
+      component:
+        formatters/tabs/horizontal-tabs.css: false

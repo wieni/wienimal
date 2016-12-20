@@ -1,18 +1,60 @@
 .tabs {
-    background-color: transparent;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .is-horizontal & .tabs__tab {
-        margin: 0 !important;
+.tabs.primary {
+    box-shadow: 0 1px 0 0 #E6E6E6;
+}
+
+.tabs__trigger {
+    display: none !important;
+}
+
+.tabs__tab {
+    float: left;
+    position: relative;
+    display: block;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 0 15px;
+
+    &:first-child {
+        margin-left: 0;
     }
 
-    a {
-        transition: background-color .25s ease-in-out;
-        padding: 15px !important;
+    &:last-child {
+        margin-right: 0;
+    }
 
-        &:active,
+    &.is-active {
+        > a {
+            background-color: $tabs-tab-active-bg-color;
+            color: $tabs-tab-text-color;
+            border-bottom-color: $tabs-tab-active-border-color;
+
+            &:hover,
+            &:focus {
+                background-color: $tabs-tab-active-bg-color;
+                border-bottom-color: $tabs-tab-active-border-color;
+            }
+        }
+    }
+
+    > a {
+        display: block;
+        padding: 10px 5px;
+        border-bottom: 4px solid $tabs-tab-border-color;
+        background-color: $tabs-tab-bg-color;
+        color: $tabs-tab-text-color;
+        transition: all .2s ease-in-out;
+        
         &:hover,
         &:focus {
-            text-decoration: none !important;
+            text-decoration: none;
+            background-color: $tabs-tab-hover-bg-color;
+            border-bottom-color: $tabs-tab-hover-border-color;
         }
     }
 }

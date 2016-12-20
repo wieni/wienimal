@@ -4,19 +4,21 @@ ionicons:
     base:
       http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css: { external: true }
 
+open-sans-font:
+  version: '1.0.0'
+  css:
+    base:
+      https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { external: true }
+
 global-styling:
   css:
     theme:
       css/wienimal.css: {}
+  dependencies:
+    - wienimal/open-sans-font
 
 dropdown:
   js:
     js/dropdown.js: {}
   dependencies:
     - core/jquery
-
-sticky:
-  js:
-    js/sticky.js: {}
-  dependencies:
-    - field_group/element.horizontal_tabs

@@ -1,0 +1,13 @@
+a.tabledrag-handle .handle {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    background-position: center center;
+}
+
+.draggable {
+    .block {
+        display: inline-flex;
+    }
+}

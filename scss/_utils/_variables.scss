@@ -1,4 +1,4 @@
-$base-font-family:
+$native-font-stack:
     // Safari for OS X and iOS (San Francisco)
     -apple-system,
         // Chrome for OS X (San Francisco)
@@ -10,21 +10,58 @@ $base-font-family:
         // Basic web fallback
     "Helvetica Neue", Arial, sans-serif !default;
 
+$base-font-family: 'Open Sans', $native-font-stack;
+$alternative-font-family: $native-font-stack;
+
 // The default colors used in text.
-$dark-text-default: #393A45 !default;
+$dark-text-default: #333333 !default;
 $light-text-default: #FFFFFF !default;
 
-$default-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+// Default box-shadow
+$default-box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+$default-hover-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+// Body settings
+$body-bg-color: #FAFAFA;
+
+// Table setttings
+$table-header-bg-color: transparent;
+$table-header-text-color: $dark-text-default;
+
+$table-border-color: #F5F5F5;
+$table-hover-bg-color: #f9f9f9;
+
+// Input styles
+$input-border-color: #e0e0e0;
+$input-text-color: #333;
+$input-label-color: lighten($input-text-color, 10%);
+$input-description-color: #AEAEAE;
 
 // Buttons
 $button-variants: (
-    'primary': #3B495D,
+    'default': #578DCD,
+    'primary': #262630,
     'danger': #CA5A41,
 );
 
 // Content header
-$content-header-bg: #2A323C;
-$content-header-color: #FFFFFF;
+$content-header-bg: #FFFFFF;
+$content-header-color: $dark-text-default;
+
+// Tabs
+$tabs-tab-text-color: $dark-text-default;
+$tabs-tab-bg-color: transparent;
+$tabs-tab-border-color: transparent;
+
+$tabs-tab-active-bg-color: transparent;
+$tabs-tab-active-border-color: #C19250;
+
+$tabs-tab-hover-bg-color: transparent;
+$tabs-tab-hover-border-color: lighten(#C19250, 10%);
 
 // Vertical tabs
-$vertical-tabs-bg-color: #D7DBDF;
+$vertical-tabs-size: 240px;
+$vertical-tabs-bg: $body-bg-color;
+$vertical-tabs-color: #333;
+$vertical-tabs-active-bg: transparent;
+$vertical-tabs-active-color: #333;

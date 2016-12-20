@@ -39,15 +39,15 @@
  * @see html.html.twig
  */
 #}
-<header class="content-header clearfix">
-    <div class="layout-container">
-        {{ page.header }}
-    </div>
-</header>
+<div class="layout-page" style="z-index: 999">
+    <header class="content-header clearfix">
+        <div class="layout-container">
+            {{ page.header }}
+            {{ page.pre_content }}
+        </div>
+    </header>
 
-<div class="layout-container">
-    <div class="layout-page">
-        {{ page.pre_content }}
+    <div class="layout-container">
         {{ page.breadcrumb }}
         <main class="page-content clearfix" role="main">
             <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
@@ -60,5 +60,4 @@
             {{ page.content }}
         </main>
     </div>
-
 </div>

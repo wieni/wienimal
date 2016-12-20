@@ -3,28 +3,29 @@
 
 @import 'base/base';
 
-@import 'components/buttons',
-    'components/button-group',
+@import 'components/admin-list',
     'components/breadcrumb',
+    'components/buttons',
+    'components/button-group',
+    'components/container-inline',
     'components/content-header',
     'components/dropdown',
     'components/dropdown.icons',
+    'components/entity-meta',
     'components/forms',
+    'components/tabledrag',
     'components/tables',
     'components/tabs',
+    'components/tags',
+    'components/horizontal-tabs',
     'components/vertical-tabs';
 
 @import 'layout/layout';
-
-/* Some dirty hacks here … */
-.js-form-submit {
-    @extend .button--primary;
-}
 
 .tabledrag-toggle-weight-wrapper {
     display: none;
 }
 
 #edit-cancel {
-    margin-left: 0;
+    margin-left: 5px;
 }

@@ -1,24 +1,39 @@
-$input-border-color: #b8b8b8;
-
 %label {
     display: block;
-    font-weight: 600;
     margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.cke {
+    border: 1px solid $input-border-color !important;
 }
 
 .form-composite > legend,
 .label {
     @extend %label;
+    color: $input-label-color;
+}
+
+.field-suffix {
+    color: $input-description-color;
+    margin-left: 3px;
+    margin-top: 5px;
+
+    .machine-name-value {
+        font-style: italic;
+    }
 }
 
 .description {
-    margin-top: .5rem;
+    margin-left: 3px;
+    margin-top: 5px;
 }
 
 /**
  * Form types.
  */
 
+.field-group-tab fieldset,
 .field-group-fieldset {
     border: 0;
     padding: 0;
@@ -27,17 +42,25 @@ $input-border-color: #b8b8b8;
         display: block;
         width: 100%;
         padding-bottom: 10px;
+        font-weight: 400;
+        color: $input-label-color;
         border-bottom: 1px solid $input-border-color;
         font-size: 24px;
+    }
+
+    .fieldset-wrapper {
+        margin-top: 15px;
     }
 }
 
 .form-type-number,
+.form-type-select,
 .form-type-textfield,
 .form-type-textarea,
 .form-type-managed-file {
     > label {
         @extend %label;
+        color: $input-label-color;
     }
 }
 
@@ -52,15 +75,18 @@ $input-border-color: #b8b8b8;
 .form-file,
 .form-date,
 .form-time,
-.form-textarea {
+.form-textarea,
+.form-search {
     -webkit-appearance: none;
     padding: 10px 15px;
+    width: 100%;
     max-width: 100%;
     border: 1px solid $input-border-color;
     font-size: 1em;
     background: #fff;
-    color: #333;
-    transition: box-shadow .2s ease-in;
+    color: rgba($input-text-color, .8);
+    transition: all .2s ease-in-out;
+    box-sizing: border-box !important;
 
     &:focus {
         outline: 0;
@@ -68,12 +94,36 @@ $input-border-color: #b8b8b8;
 
     &:focus,
     &:hover {
+        color: $input-text-color;
+        border-color: darken($input-border-color, 15%);
         background-color: #fff;
-        // border-color: darken($input-border-color, 20%);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.10);
+        box-shadow: $default-box-shadow;
+    }
+
+    td & {
+        width: 100%;
     }
 }
 
 .form-textarea-wrapper {
-    border: 1px solid $input-border-color;
+}
+
+.form-item {
+    .description {
+        color: $input-description-color;
+    }
+}
+
+.form-file {
+    border: 0;
+    padding: 10px 0;
+
+    &:focus,
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.form-disabled {
+    opacity: .65;
 }

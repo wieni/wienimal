@@ -1,0 +1,27 @@
+.admin-list {
+    $admin-list-bg-color: #E9EDF0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 15px 0;
+        padding: 10px 15px;
+        background-color: $admin-list-bg-color;
+        box-shadow: $default-box-shadow;
+        transition: background-color .2s, box-shadow .1s ease-in-out;
+
+        &:hover {
+            background-color: darken($admin-list-bg-color, 2%);
+            box-shadow: $default-hover-box-shadow;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .label {
+        color: #333;
+    }
+}

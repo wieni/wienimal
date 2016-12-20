@@ -2,11 +2,6 @@
  * @file
  * Override of misc/vertical-tabs.css.
  */
-
-$vertical-tabs-size: 240px;
-$vertical-tabs-bg: #fff;
-$vertical-tabs-active-bg: #3B495D;
-
 .vertical-tabs {
     position: relative;
     overflow: hidden;
@@ -27,14 +22,22 @@ $vertical-tabs-active-bg: #3B495D;
     position: relative;
     display: block;
     background-color: $vertical-tabs-bg;
-    transition: background-color .15s ease-in-out;
+    font-weight: 100;
+    transition: all .2s ease-out;
+    border-bottom: 4px solid transparent;
+}
+
+.vertical-tabs__menu-item-title {
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .vertical-tabs__menu-item.is-selected {
     z-index: 1;
     overflow-x: hidden;
-    width: 100%;
     background-color: $vertical-tabs-active-bg;
+    border-bottom-color: $tabs-tab-active-border-color;
+
 }
 
 .vertical-tabs__menu-item:focus,
@@ -43,18 +46,19 @@ $vertical-tabs-active-bg: #3B495D;
 }
 
 .vertical-tabs__menu-item a {
-    color: rgba(#FFF, .8);
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     width: 100%;
     vertical-align: middle;
+    color: rgba($vertical-tabs-color, .95);
     padding: 15px;
     text-decoration: none;
-    transition: padding-left .2s ease-in-out;
+    transition: color .2s ease-in;
 }
 
 .vertical-tabs__menu-item a:hover,
 .vertical-tabs__menu-item a:focus {
-    color: #FFF;
+    color: $vertical-tabs-color;
 }
 
 .vertical-tabs__menu-item a:focus {
@@ -71,26 +75,24 @@ $vertical-tabs-active-bg: #3B495D;
 }
 
 .vertical-tabs__menu-item.is-selected a {
-    color: #333;
+    color: $vertical-tabs-active-color;
     border-bottom: none;
     text-decoration: none;
-    padding-left: 20px;
 }
 
 .vertical-tabs__menu-item.is-selected a:hover,
 .vertical-tabs__menu-item.is-selected a:focus {
-    color: inherit;
+    color: $vertical-tabs-active-color;
 }
 
 .vertical-tabs__panes {
     margin: 0 0 0 $vertical-tabs-size;
-    padding: 15px 30px;
-    width: calc(100% - #{$vertical-tabs-size});
+    padding: 0 15px 0 30px;
     background: #fff;
 
     .details-wrapper {
         box-sizing: border-box;
-        padding: 0 15px 0 0;
+        padding: 0;
     }
 }
 
@@ -104,15 +106,23 @@ $vertical-tabs-active-bg: #3B495D;
     margin: 0;
     padding: 0;
     border: 0;
-    color: #595959;
 }
 
 .vertical-tabs__menu-item-summary {
     display: block;
     padding-top: 0.4em;
-    color: #666;
 }
 
 .vertical-tabs__pane > summary {
     display: none;
+}
+
+.layout-node-form {
+    .vertical-tabs {
+        padding-bottom: 5px;
+    }
+
+    .vertical-tabs__menu {
+
+    }
 }

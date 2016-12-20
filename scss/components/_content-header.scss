@@ -1,11 +1,19 @@
 .content-header {
     background-color: $content-header-bg;
     color: $content-header-color;
-    padding: 1rem 0 3rem;
+    margin: 0 0 2rem;
+    padding: 1.5rem 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid $table-border-color;
 }
 
 .page-title {
-    font-size: 1.4rem;
-    line-height: 2;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
     font-weight: 600;
+    font-size: 28px;
+    line-height: 1.5;
+    // border-bottom: 1px solid rgba($content-header-color, .2);
 }
