@@ -1,14 +1,17 @@
-langcode: en
+uuid: 102e4164-1b5b-4875-9607-bda57bba0369
+langcode: nl
 status: true
 dependencies:
   module:
     - user
   theme:
     - wienimal
+_core:
+  default_config_hash: zf-A1_fyLxsRqMK7XhXWDL63uyyO_C7_Kg5MC3mFdOY
 id: wienimal_login
 theme: wienimal
 region: content
-weight: 10
+weight: 0
 provider: null
 plugin: user_login_block
 settings:

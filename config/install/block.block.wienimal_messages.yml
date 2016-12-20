@@ -1,10 +1,13 @@
-langcode: en
+uuid: a3ed95a0-9357-4a15-b945-d7e944f7924d
+langcode: nl
 status: true
 dependencies:
   module:
     - system
   theme:
     - wienimal
+_core:
+  default_config_hash: s3j4I0KIy9K_Wogu7q8WYDhegTxrqMdqeHhUQAToU8Y
 id: wienimal_messages
 theme: wienimal
 region: highlighted

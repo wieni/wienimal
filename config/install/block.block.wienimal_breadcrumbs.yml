@@ -1,10 +1,13 @@
-langcode: en
+uuid: 7a36fc46-0865-4138-a6e9-515f2cb64cb2
+langcode: nl
 status: true
 dependencies:
   module:
     - system
   theme:
     - wienimal
+_core:
+  default_config_hash: _eqga_Z9--hn3OXUHjggWv5B6I1eVgcrpRokQ_q52i8
 id: wienimal_breadcrumbs
 theme: wienimal
 region: breadcrumb

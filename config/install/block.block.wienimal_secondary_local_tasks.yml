@@ -1,12 +1,15 @@
-langcode: en
+uuid: 1ff076e0-258f-420a-86de-ae461663fddf
+langcode: nl
 status: true
 dependencies:
   theme:
     - wienimal
+_core:
+  default_config_hash: mYptgO-G1hqCJzRntsjxmrSSPWarUs0GUCwDNguzM_U
 id: wienimal_secondary_local_tasks
 theme: wienimal
-region: pre_content
-weight: 0
+region: content
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

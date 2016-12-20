@@ -1,12 +1,15 @@
-langcode: en
+uuid: 7c512c5a-d5e7-49f9-8366-231b736f5adb
+langcode: nl
 status: true
 dependencies:
   theme:
     - wienimal
+_core:
+  default_config_hash: '-n6SLwkagV2f2kWkKjdob7Dst70SjtQQ5t9kM0b_mes'
 id: wienimal_page_title
 theme: wienimal
 region: header
-weight: -30
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

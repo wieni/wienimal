@@ -1,12 +1,15 @@
-langcode: en
+uuid: 2221e0dc-2f43-4e29-b3ff-b274a8ca1051
+langcode: nl
 status: true
 dependencies:
   theme:
     - wienimal
+_core:
+  default_config_hash: Vj3pzWiHJyYSB31hh_nRm1T2-uIy9ewhXJQESerAyS8
 id: wienimal_local_actions
 theme: wienimal
 region: content
-weight: -10
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

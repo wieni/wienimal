@@ -1,14 +1,17 @@
-langcode: en
+uuid: 43e2a69c-c8b4-4a50-9a30-5e27aceeda7d
+langcode: nl
 status: true
 dependencies:
   module:
     - system
   theme:
     - wienimal
+_core:
+  default_config_hash: cqmOcvla88O1Vk7VdN6WHKazLT4UoOPw0GvQDMYfiHw
 id: wienimal_content
 theme: wienimal
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:
