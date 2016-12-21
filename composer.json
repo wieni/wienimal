@@ -18,8 +18,5 @@
         }
     ],
     "require": {
-        "drupal/adminimal_theme": "^8.0",
-        "drupal/adminimal_admin_toolbar": "^8.0",
-        "drupal/admin_toolbar": "~8.1"
     }
 }
