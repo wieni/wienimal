@@ -3,6 +3,7 @@ type: theme
 description: 'A nice admin experience for Drupal 8, finally.'
 version: VERSION
 core: 8.x
+base theme: seven
 
 # Regions from adminimal theme, since regions are not inherited from the base theme.
 regions:
@@ -19,8 +20,8 @@ regions_hidden:
   - sidebar_first
 
 libraries:
-  - wienimal/global-styling
   - wienimal/adminimal-styling
+  - wienimal/global-styling
   - wienimal/dropdown
 
 stylesheets-remove:
