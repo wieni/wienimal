@@ -20,18 +20,13 @@ regions_hidden:
 
 libraries:
   - wienimal/global-styling
+  - wienimal/adminimal-styling
   - wienimal/dropdown
-  - wienimal/sticky
 
 stylesheets-remove:
   - '@stable/css/node/node.module.css'
 
 libraries-override:
-  adminimal_theme/global-styling:
-    css:
-      base:
-        css/adminimal.css: css/adminimal.css
-
   classy/base:
     css:
       component:

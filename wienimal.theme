@@ -1,1 +1,17 @@
 <?php
+/**
+ * @file
+ * Functions to support theming in the Adminimal theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function wienimal_theme_preprocess_html(&$variables) {
+
+    // Add adminimal class to the body, because the theme still contains
+    // the styling from adminimal_theme, which requires this body class.
+    $variables['attributes']['class'][] = 'adminimal';
+    // Add our own wienimal class to the body.
+    $variables['attributes']['class'][] = 'wienimal';
+}

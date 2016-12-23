@@ -11,13 +11,21 @@ open-sans-font:
       https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { external: true }
 
 global-styling:
+  version: '1.0.0'
   css:
     theme:
       css/wienimal.css: {}
   dependencies:
     - wienimal/open-sans-font
 
+adminimal-styling:
+  version: '1.0.0'
+  css:
+    theme:
+      css/adminimal.scss: {}
+
 dropdown:
+  version: '1.0.0'
   js:
     js/dropdown.js: {}
   dependencies:
