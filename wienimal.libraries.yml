@@ -1,14 +1,4 @@
-ionicons:
-  version: '2.0.1'
-  css:
-    base:
-      http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css: { external: true }
-
-open-sans-font:
-  version: '1.0.0'
-  css:
-    base:
-      https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { external: true }
+# Global styles
 
 global-styling:
   version: '1.0.0'
@@ -23,6 +13,22 @@ adminimal-styling:
   css:
     theme:
       css/adminimal.css: {}
+
+# Fonts
+
+open-sans-font:
+  version: '1.0.0'
+  css:
+    base:
+      https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { external: true }
+
+ionicons:
+  version: '2.0.1'
+  css:
+    base:
+      http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css: { external: true }
+
+# Components
 
 dropdown:
   version: '1.0.0'
