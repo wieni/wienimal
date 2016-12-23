@@ -1,7 +1,6 @@
 name: Wienimal
 type: theme
 description: 'A nice admin experience for Drupal 8, finally.'
-base theme: adminimal_theme
 version: VERSION
 core: 8.x
 
