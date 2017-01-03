@@ -40,12 +40,14 @@
  */
 #}
 <div class="layout-page" style="z-index: 999">
-    <header class="content-header clearfix">
-        <div class="layout-container">
-            {{ page.header }}
-            {{ page.pre_content }}
-        </div>
-    </header>
+    {% if page.header or page.pre_content %}
+        <header class="content-header clearfix">
+            <div class="layout-container">
+                {{ page.header }}
+                {{ page.pre_content }}
+            </div>
+        </header>
+    {% endif %}
 
     <div class="layout-container">
         {{ page.breadcrumb }}
