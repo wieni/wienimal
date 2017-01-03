@@ -26,7 +26,7 @@ ionicons:
   version: '2.0.1'
   css:
     base:
-      http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css: { external: true }
+      https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css: { external: true }
 
 # Components
 
