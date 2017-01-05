@@ -1,5 +1,23 @@
 table {
     font-size: 15px;
+
+    .btn-group {
+        .button {
+            @extend .button--xs;
+        }
+    }
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 5px 10px;
+}
+
+tr {
+    border-bottom: 1px solid $table-border-color;
 }
 
 thead {
@@ -49,10 +67,3 @@ th > a:after,
 th.is-active > a:after {
     display: none;
 }
-
-tr {
-    border-bottom: 1px solid $table-border-color;
-}
-
-
-
