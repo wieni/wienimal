@@ -39,11 +39,12 @@ $body-bg-color: #FAFAFA;
 // Table settings
 $table-header-bg-color: transparent;
 $table-header-text-color: $dark-text-default;
-$table-border-color: #F5F5F5;
+$table-border-color: darken(#F5F5F5, 5%);
 $table-hover-bg-color: #f9f9f9;
 
 // Input styles
-$input-border-color: #e0e0e0;
+$input-border-color: rgba(0, 0, 0, .15);
+$input-border-focus-color: rgba(0, 0, 0, .35);
 $input-text-color: #333;
 $input-label-color: lighten($input-text-color, 10%);
 $input-description-color: #AEAEAE;
