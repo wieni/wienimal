@@ -14,3 +14,7 @@ function wienimal_preprocess_html(&$variables) {
     // Add our own wienimal class to the body.
     $variables['attributes']['class'][] = 'wienimal';
 }
+
+function wienimal_preprocess_views_ui_display_tab_setting(&$variables) {
+    // kint($variables);
+}

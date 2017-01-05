@@ -32,28 +32,36 @@
  */
 #}
 {% if links -%}
-    <div class="btn-group">
+    {% if links|length > 1 %}
+        <div class="btn-group">
+            {%- if links|first.link -%}
+                {{ link(links|first.link['#title'], links|first.link['#url'], {'class': ['button', 'button--primary']}) }}
+            {%- else -%}
+                {{ links|first.text }}
+            {%- endif -%}
+
+            <button type="button" class="button button--primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+
+            <ul{{ attributes.addClass('dropdown-menu').removeClass('dropbutton') }}>
+                {%- for item in links -%}
+                    <li{{ item.attributes }}>
+                        {%- if item.link -%}
+                            {{ item.link }}
+                        {%- else -%}
+                            {{ item.text }}
+                        {%- endif -%}
+                    </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    {% else %}
         {%- if links|first.link -%}
-            {{ link(links|first.link['#title'], links|first.link['#url'], {'class': ['button', 'button--primary']}) }}
+            {{ links|first.link }}
         {%- else -%}
             {{ links|first.text }}
         {%- endif -%}
-
-        <button type="button" class="button button--primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="caret"></span>
-            <span class="visually-hidden">Toggle Dropdown</span>
-        </button>
-
-        <ul{{ attributes.addClass('dropdown-menu').removeClass('dropbutton') }}>
-            {%- for item in links -%}
-                <li{{ item.attributes }}>
-                    {%- if item.link -%}
-                        {{ item.link }}
-                    {%- else -%}
-                        {{ item.text }}
-                    {%- endif -%}
-                </li>
-            {%- endfor -%}
-        </ul>
-    </div>
+    {% endif %}
 {%- endif %}

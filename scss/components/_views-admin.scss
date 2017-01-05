@@ -1,0 +1,98 @@
+.views-admin {
+    .button {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .edit-display-settings {
+        .icon {
+            height: auto;
+            width: auto;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            border: 0 !important;
+            text-indent: 0 !important;
+            background: #FFF;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(map-get($button-variants, 'primary'), .25);
+            }
+        }
+    }
+}
+
+.views-display-column {
+    border: 0;
+}
+
+.views-ui-display-tab-bucket {
+    padding-top: 0;
+    border: 1px solid rgba(#333333, .2);
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        border-bottom: 1px solid rgba(#333333, .2);
+    }
+
+    &.page {
+        margin-bottom: 0;
+    }
+
+    > .views-display-setting {
+        padding: 4px 6px 4px;
+    }
+
+    > .icon {
+        @extend .button;
+        height: auto;
+        width: auto;
+        background: map-get($button-variants, 'primary') !important;
+        display: inline-block !important;
+    }
+
+    > .btn-group,
+    > .icon {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+
+    > .views-ui-display-tab-bucket__title {
+        margin-left: -1px;
+        margin-right: -1px;
+        margin-bottom: 15px;
+        padding: 12px 10px;
+        background: rgba(#333333, .75);
+        color: #fff;
+    }
+}
+
+.views-ui-settings-bucket-operations {
+    &.dropdown-menu {
+        border-radius: 0;
+    }
+}
+
+.views-ui-display-tab-actions {
+    .dropbutton {
+        margin: 15px 10px;
+
+        a {
+            @extend .button;
+            @extend .button--default;
+        }
+
+        li {
+            display: inline-block !important;
+            border-left: 1px solid #fff;
+        }
+    }
+}
+
+.views-ui-display-tab-setting {
+    .label {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}
