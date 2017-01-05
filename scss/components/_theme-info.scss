@@ -1,0 +1,23 @@
+.theme-selector {
+    &.theme-default {
+        background-color: rgba(#D5D46F, .15);
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .screenshot {
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .operations {
+        li {
+            padding: 0;
+            border: 0;
+
+            &:last-child {
+                padding: 0;
+            }
+        }
+    }
+}

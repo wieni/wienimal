@@ -30,6 +30,11 @@
     }
 }
 
+.button--xs {
+    font-size: 13px;
+    padding: 7px 10px;
+}
+
 .button--small {
     font-size: 14px;
 }
@@ -50,4 +55,11 @@
 .compact-link > a {
     @extend .button;
     @extend .button--primary;
+}
+
+// Operation links
+.operations > li > a {
+    @extend .button;
+    @extend .button--primary;
+    @extend .button--xs;
 }
