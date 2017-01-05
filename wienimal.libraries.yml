@@ -36,3 +36,4 @@ dropdown:
     js/dropdown.js: {}
   dependencies:
     - core/jquery
+    - core/drupal

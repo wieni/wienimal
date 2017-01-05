@@ -108,6 +108,8 @@
 .form-select {
     height: 42px;
     border: 1px solid $input-border-color;
+    background: #fff;
+    border-radius: 0;
 
     &:focus {
         outline: 0;
