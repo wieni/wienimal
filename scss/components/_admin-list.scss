@@ -5,9 +5,10 @@
 
     li {
         margin: 15px 0;
-        padding: 15px 15px 30px 15px;
+        padding: 5px 15px 15px 0;
         border-bottom: 1px solid $table-border-color;
-        transition: background-color .2s, padding .2s;
+        transition: background-color .2s, opacity .2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+        opacity: .85;
 
         &:last-of-type {
             border-bottom: 0;
@@ -15,7 +16,7 @@
 
         &:hover,
         &:focus {
-            padding: 15px 10px 30px 20px;
+            opacity: 1;
         }
     }
 
@@ -28,4 +29,21 @@
         color: #333;
         font-weight: 800;
     }
+}
+
+.admin__list {
+    @include media-breakpoint-up('xl') {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.admin__list--left {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.admin__list--right {
+    flex: 1;
+    margin-left: 15px;
 }

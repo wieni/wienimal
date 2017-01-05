@@ -45,3 +45,9 @@
         }
     }
 }
+
+// Compact link, used in the Drupal admin templates.
+.compact-link > a {
+    @extend .button;
+    @extend .button--primary;
+}

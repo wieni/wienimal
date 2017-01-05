@@ -1,0 +1,55 @@
+$panel-icons: (
+    'people': $ionicon-var-ios-people,
+    'content-authoring': $ionicon-var-edit,
+    'system': $ionicon-var-gear-a,
+    'development': $ionicon-var-code-working,
+    'user-interface': $ionicon-var-ipad,
+    'media': $ionicon-var-image,
+    'search-and-metadata': $ionicon-var-search,
+    'regional-and-language': $ionicon-var-earth,
+    'web-services': $ionicon-var-cloud,
+);
+
+
+.panel {
+    background-color: transparent;
+    border: 1px solid $table-border-color;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.panel__title {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    background-color: #2B2E4A;
+    color: #fff;
+    line-height: 1.5;
+
+    &::before {
+        @include ionicons;
+        margin-right: 10px;
+        background: #E84545;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    @each $icon_name, $icon_code in $panel-icons {
+        .panel--#{$icon_name} & {
+            &::before {
+                content: $icon_code;
+            }
+        }
+    }
+}
+
+.panel__content {
+    padding: 0 15px;
+}

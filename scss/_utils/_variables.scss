@@ -1,3 +1,13 @@
+// BREAKPOINTS
+$grid-breakpoints: (
+    xs: 0,
+    s: 326px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
 $native-font-stack:
     // Safari for OS X and iOS (San Francisco)
     -apple-system,
@@ -10,7 +20,9 @@ $native-font-stack:
         // Basic web fallback
     "Helvetica Neue", Arial, sans-serif !default;
 
+// The base font family
 $base-font-family: 'Open Sans', $native-font-stack;
+// The alternative font family
 $alternative-font-family: $native-font-stack;
 
 // The default colors used in text.
@@ -24,10 +36,9 @@ $default-hover-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23
 // Body settings
 $body-bg-color: #FAFAFA;
 
-// Table setttings
+// Table settings
 $table-header-bg-color: transparent;
 $table-header-text-color: $dark-text-default;
-
 $table-border-color: #F5F5F5;
 $table-hover-bg-color: #f9f9f9;
 
