@@ -3,29 +3,6 @@
 @import '_utils/variables';
 @import '_utils/functions';
 
-.adminimal select {
-    min-height: 28px;
-    text-shadow: none;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .adminimal select {
-        border-radius: 0;
-        background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
-    }
-
-    .adminimal select:focus,
-    .adminimal select:hover {
-        background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
-    }
-    .adminimal select:focus {
-        border-color: #68A3CF;
-        outline: 2px solid #C1E0FF;
-        outline-offset: 0px;
-        color: #000;
-    }
-}
-
 .adminimal .link.tabledrag-toggle-weight {
     margin-bottom: 0.3em;
 }
