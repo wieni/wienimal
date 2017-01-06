@@ -90,6 +90,7 @@
     color: rgba($input-text-color, .8);
     transition: all .2s ease-in-out;
     box-sizing: border-box !important;
+    border-radius: 4px;
 
     &:focus {
         outline: 0;
@@ -121,6 +122,10 @@
 }
 
 .form-item {
+    td & {
+        margin: 0;
+    }
+
     .description {
         color: $input-description-color;
     }
