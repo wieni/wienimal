@@ -109,6 +109,16 @@
     }
 }
 
+.form-text[name*="title"] {
+    border: 0;
+    border-bottom: 2px solid lighten($input-border-color, 5%);
+    font-size: 20px;
+
+    &:focus {
+        border-bottom: 2px solid lighten(#333, 45%);
+    }
+}
+
 .form-select {
     height: 38px;
     border: 1px solid $input-border-color;
