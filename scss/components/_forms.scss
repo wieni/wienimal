@@ -60,8 +60,6 @@
 .form-type-email,
 .form-type-managed-file,
 .form-type-textarea {
-    margin-bottom: 2.5rem;
-
     > label {
         @extend %label;
         color: $input-label-color;
@@ -106,16 +104,6 @@
 
     td & {
         width: 100%;
-    }
-}
-
-.form-text[name*="title"] {
-    border: 0;
-    border-bottom: 2px solid lighten($input-border-color, 5%);
-    font-size: 20px;
-
-    &:focus {
-        border-bottom: 2px solid lighten(#333, 45%);
     }
 }
 

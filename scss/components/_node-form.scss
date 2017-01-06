@@ -1,0 +1,14 @@
+.node-form {
+    max-width: 960px;
+    margin: 0 auto;
+
+    .form-text[name*="title"] {
+        border: 0;
+        border-bottom: 2px solid lighten($input-border-color, 5%);
+        font-size: 20px;
+
+        &:focus {
+            border-bottom: 2px solid lighten(#333, 45%);
+        }
+    }
+}
