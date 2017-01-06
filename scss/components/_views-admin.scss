@@ -5,6 +5,11 @@
     }
 
     .edit-display-settings {
+        .btn-group {
+            > .button.icon {
+                background: map-get($button-variants, 'primary') !important;
+            }
+        }
         .icon {
             height: auto;
             width: auto;

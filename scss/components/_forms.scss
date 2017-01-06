@@ -53,12 +53,13 @@
     }
 }
 
+.form-type-entity-autocomplete,
+.form-type-textfield,
 .form-type-number,
 .form-type-select,
-.form-type-textfield,
-.form-type-textarea,
+.form-type-email,
 .form-type-managed-file,
-.form-type-entity-autocomplete {
+.form-type-textarea {
     > label {
         @extend %label;
         color: $input-label-color;
