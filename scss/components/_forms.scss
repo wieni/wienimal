@@ -60,6 +60,8 @@
 .form-type-email,
 .form-type-managed-file,
 .form-type-textarea {
+    margin-bottom: 2.5rem;
+
     > label {
         @extend %label;
         color: $input-label-color;

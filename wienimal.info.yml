@@ -26,6 +26,7 @@ libraries:
 
 stylesheets-remove:
   - '@stable/css/node/node.module.css'
+  - '@stable/css/filter/filter.admin.css'
 
 libraries-override:
   classy/base:
@@ -58,3 +59,8 @@ libraries-override:
     css:
       component:
         formatters/tabs/horizontal-tabs.css: false
+
+  filter/drupal.filter.admin:
+    css:
+      theme:
+        css/filter.admin.css: false
