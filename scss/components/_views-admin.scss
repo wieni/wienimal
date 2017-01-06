@@ -27,8 +27,30 @@
     }
 }
 
+.views-displays {
+    border: 0;
+}
+
+.views-display-top {
+    background-color: transparent;
+    border-bottom: 0;
+    padding: 0;
+    position: relative;
+}
+
+.edit-display-settings {
+    margin: 0;
+}
+
 .views-display-column {
     border: 0;
+}
+
+.edit-display-settings-top.views-ui-display-tab-bucket {
+    border: 0;
+}
+
+.views-displays .tabs.secondary a {
 }
 
 .views-ui-display-tab-bucket {
@@ -81,7 +103,7 @@
 
 .views-ui-display-tab-actions {
     .dropbutton {
-        margin: 15px 10px;
+        margin: 15px 0;
 
         a {
             @extend .button;

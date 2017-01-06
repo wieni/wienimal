@@ -41,7 +41,7 @@
 
 @each $name, $color in $button-variants {
     .button--#{$name} {
-        background: $color;
+        background-color: $color;
         color: color-contrast($color);
 
         &:focus,
