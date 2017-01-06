@@ -11,14 +11,14 @@
     text-decoration: none;
     transition: all .2s ease-in-out;
     padding: 10px 15px;
-    background: map-get($button-variants, 'default');
-    color: color-contrast(map-get($button-variants, 'default'));
+    background: map-get($button-variants, 'primary');
+    color: color-contrast(map-get($button-variants, 'primary'));
 
     &:hover,
     &:focus {
         text-decoration: none;
         outline: 0;
-        background:  lighten(map-get($button-variants, 'default'), 10%);
+        background:  lighten(map-get($button-variants, 'primary'), 10%);
     }
 
     .caret {
