@@ -3,7 +3,7 @@
     display: inline-flex;
     vertical-align: middle; // match .btn alignment given font-size hack above
 
-    > .btn {
+    > .button {
         position: relative;
         float: left;
 
@@ -18,45 +18,49 @@
 
 // Prevent double borders when buttons are next to each other
 .btn-group {
-    .btn + .btn,
-    .btn + .btn-group,
-    .btn-group + .btn,
+    .button + .button,
+    .button + .btn-group,
+    .btn-group + .button,
     .btn-group + .btn-group {
         margin-left: -1px;
     }
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
     border-radius: 0;
 }
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
-.btn-group > .btn:first-child {
+.btn-group > .button:first-child {
     margin-left: 0;
 
     &:not(:last-child):not(.dropdown-toggle) {
-        border-right-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
 // Need .dropdown-toggle since :last-child doesn't apply, given that a .dropdown-menu is used immediately after it
-.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .button:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
-    border-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
     float: left;
 }
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .button {
     border-radius: 0;
 }
 .btn-group > .btn-group:first-child:not(:last-child) {
-    > .btn:last-child,
+    > .button:last-child,
     > .dropdown-toggle {
-        border-right-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
-    border-left-radius: 0;
+.btn-group > .btn-group:last-child:not(:first-child) > .button:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }

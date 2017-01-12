@@ -52,7 +52,7 @@ $input-description-color: #AEAEAE;
 // Buttons
 $button-variants: (
     'default': #578DCD,
-    'primary': #262630,
+    'primary': #4C5661,
     'danger': #CA5A41,
 );
 
@@ -66,10 +66,10 @@ $tabs-tab-bg-color: transparent;
 $tabs-tab-border-color: transparent;
 
 $tabs-tab-active-bg-color: transparent;
-$tabs-tab-active-border-color: #C19250;
+$tabs-tab-active-border-color: #505660;
 
 $tabs-tab-hover-bg-color: transparent;
-$tabs-tab-hover-border-color: lighten(#C19250, 10%);
+$tabs-tab-hover-border-color: darken(#505660, 10%);
 
 // Vertical tabs
 $vertical-tabs-size: 240px;
