@@ -1,0 +1,22 @@
+.views-exposed-form {
+    .form--inline {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+}
+
+.views-form {
+    .form-wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .form-item {
+        margin-right: 0.5em;
+    }
+}
+
+.views-table {
+    font-size: 14px;
+}

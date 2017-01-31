@@ -1,9 +1,8 @@
 table {
-    font-size: 15px;
-
     .btn-group {
         .button {
-            @extend .button--xs;
+            font-size: 12px;
+            padding: 5px 6px;
         }
     }
 }
@@ -13,7 +12,11 @@ th {
 }
 
 td {
-    padding: 5px 10px;
+    padding: 3px 10px;
+
+    &.views-field-operations {
+        padding: 1px 10px;
+    }
 }
 
 tr {

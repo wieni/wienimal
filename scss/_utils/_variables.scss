@@ -21,7 +21,7 @@ $native-font-stack:
     "Helvetica Neue", Arial, sans-serif !default;
 
 // The base font family
-$base-font-family: 'Open Sans', $native-font-stack;
+$base-font-family: $native-font-stack;
 // The alternative font family
 $alternative-font-family: $native-font-stack;
 

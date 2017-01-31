@@ -49,6 +49,7 @@ libraries-override:
         css/components/form.css: false
         css/components/tabs.css: false
         css/components/panel.css: false
+        css/components/pager.css: false
 
   seven/vertical-tabs:
     css:

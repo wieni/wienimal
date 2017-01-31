@@ -5,8 +5,8 @@ global-styling:
   css:
     theme:
       css/wienimal.css: {}
-  dependencies:
-    - wienimal/open-sans-font
+  # dependencies:
+  #  - wienimal/open-sans-font
 
 adminimal-styling:
   version: '1.0.0'
