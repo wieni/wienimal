@@ -20,7 +20,7 @@
     &:focus {
         text-decoration: none;
         outline: 0;
-        background:  lighten(map-get($button-variants, 'primary'), 10%);
+        background: lighten(map-get($button-variants, 'primary'), 10%);
     }
 
     .caret {
@@ -38,7 +38,7 @@
 
         &:hover,
         &:focus {
-            background:  darken(#CCCCCC, 10%);
+            background: darken(#CCCCCC, 10%);
         }
     }
 }
