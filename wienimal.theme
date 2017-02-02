@@ -15,6 +15,15 @@ function wienimal_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'wienimal';
 }
 
+/**
+ * Implements hook_preprocess_page(&$variables)
+ */
+function wienimal_preprocess_page(&$variables) {
+    $show_breadcrumbs = \Drupal::config('wienimal.settings')->get('breadcrumbs.show');
+
+    $variables['show_breadcrumbs'] = $show_breadcrumbs;
+}
+
 function wienimal_preprocess_views_ui_display_tab_setting(&$variables) {
     // kint($variables);
 }
