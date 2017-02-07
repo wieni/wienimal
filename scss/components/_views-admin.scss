@@ -5,7 +5,7 @@
     }
 
     .edit-display-settings {
-        .btn-group {
+        .dropdown-group {
             > .button.icon {
                 background: map-get($button-variants, 'primary') !important;
             }
@@ -78,7 +78,7 @@
         display: inline-block !important;
     }
 
-    > .btn-group,
+    > .dropdown-group,
     > .icon {
         position: absolute;
         top: 8px;

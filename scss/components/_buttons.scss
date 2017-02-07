@@ -54,12 +54,13 @@
 
 @each $name, $color in $button-variants {
     .button--#{$name} {
-        background-color: $color;
-        color: color-contrast($color);
+        background-color: $color !important;
+        color: color-contrast($color) !important;
+        border-bottom-color: darken($color, 10%) !important;
 
         &:focus,
         &:hover {
-            background: lighten($color, 10%);
+            background: darken($color, 10%) !important;
         }
     }
 }

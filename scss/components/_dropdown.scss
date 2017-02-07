@@ -9,6 +9,17 @@
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
+.dropdown-group {
+    > a,
+    > input[type="submit"] {
+        @extend .button;
+        @extend .button--primary;
+    }
+}
+
+.dropdown-toggle {
+    @extend .button--primary;
+}
 
 .dropdown-menu {
     .open > & {
@@ -55,8 +66,10 @@
         }
 
         > .form-submit {
-            background: transparent;
             width: 100%;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
         }
     }
 }
