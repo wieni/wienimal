@@ -50,7 +50,10 @@
     {% endif %}
 
     <div class="layout-container">
-        {{ page.breadcrumb }}
+        {% if show_breadcrumbs %}
+            {{ page.breadcrumb }}
+        {% endif %}
+
         <main class="page-content clearfix" role="main">
             <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
             {{ page.highlighted }}

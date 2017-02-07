@@ -1,2 +1,5 @@
 toolbar:
   theme: dark
+
+breadcrumbs:
+  show: 0
