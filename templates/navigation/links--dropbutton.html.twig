@@ -33,18 +33,16 @@
 #}
 {% if links -%}
     {% if links|length > 1 %}
-        <div class="btn-group">
+        <div class="dropdown-group">
             {%- if links|first.link -%}
-                {% set old_link_classes = links|first['link']['#options']['attributes']['class'] ? links|first['link']['#options']['attributes']['class'] : [] %}
-                {% set new_link_classes = ['button', 'button--primary'] %}
-                {% set link_classes = old_link_classes|merge(new_link_classes) %}
-
-                {{ link(links|first.link['#title'], links|first.link['#url'], { 'class': link_classes }) }}
+                {{ links|first.link }}
+            {%- elseif links|first.text_attributes -%}
+                <span{{ links|first.text_attributes }}>{{ links|first.text }}</span>
             {%- else -%}
                 {{ links|first.text }}
             {%- endif -%}
 
-            <button type="button" class="button button--primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="caret"></span>
                 <span class="visually-hidden">Toggle Dropdown</span>
             </button>
