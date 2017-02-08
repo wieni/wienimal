@@ -2,7 +2,7 @@ table {
     .dropdown-group {
         .button {
             font-size: 12px;
-            padding: 5px 6px;
+            padding: 4px 10px;
         }
     }
 }
@@ -34,12 +34,18 @@ thead {
         text-transform: none;
         font-weight: 600;
 
+        a {
+            &,
+            &:hover,
+            &:focus {
+                color: #333333 !important;
+            }
+        }
+
         &.is-active {
-            background: #fff;
-            border-bottom: 1px solid #fff;
-            border-top: 1px solid #F5F5F5;
-            border-left: 1px solid #F5F5F5;
-            border-right: 1px solid #F5F5F5;
+            background: #F5F5F3;
+            border-bottom-color: transparent;
+
         }
     }
 }
@@ -55,11 +61,6 @@ tbody tr {
     &:last-of-type {
         border-bottom: 0;
     }
-}
-
-th.is-active > a,
-th.is-active > a:hover {
-    color: #333;
 }
 
 th > a:hover {
