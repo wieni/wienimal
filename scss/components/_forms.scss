@@ -27,6 +27,12 @@
 .description {
     margin-left: 3px;
     margin-top: 5px;
+
+    ul,
+    ol {
+        margin: 0 1rem;
+        padding: 0;
+    }
 }
 
 /**
@@ -145,6 +151,7 @@
 
     .description {
         color: $input-description-color;
+        margin: 5px 0;
     }
 }
 
