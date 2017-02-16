@@ -77,6 +77,12 @@
     }
 }
 
+.field--type-datetime {
+ .form-item {
+     margin-top: 0;
+ }
+}
+
 .form-autocomplete,
 .form-text,
 .form-tel,
