@@ -20,7 +20,7 @@ $dropdown-icons: (
             position: relative;
 
             &::before {
-                display: inline-block;
+                content: $ionicon-var-ios-more;
                 font-family: "Ionicons";
                 speak: none;
                 font-style: normal;
@@ -39,7 +39,7 @@ $dropdown-icons: (
     }
 
     @each $name, $icon in $dropdown-icons {
-        .#{$name} > a::before {
+        li.#{$name} > a::before {
             content: $icon;
         }
     }
