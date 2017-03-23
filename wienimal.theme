@@ -23,7 +23,3 @@ function wienimal_preprocess_page(&$variables) {
 
     $variables['show_breadcrumbs'] = $show_breadcrumbs;
 }
-
-function wienimal_preprocess_views_ui_display_tab_setting(&$variables) {
-    // kint($variables);
-}
