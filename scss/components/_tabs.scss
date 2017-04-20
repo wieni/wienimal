@@ -16,7 +16,7 @@
     float: left;
     position: relative;
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     margin: 0 15px;
 
@@ -26,6 +26,10 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:not(.is-active) {
+        opacity: .8;
     }
 
     &.is-active {
@@ -45,7 +49,7 @@
     > a {
         display: block;
         padding: 10px 5px;
-        border-bottom: 4px solid $tabs-tab-border-color;
+        border-bottom: 1px solid $tabs-tab-border-color;
         background-color: $tabs-tab-bg-color;
         color: $tabs-tab-text-color;
         transition: all .2s ease-in-out;

@@ -34,7 +34,7 @@ $default-box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
 $default-hover-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 // Body settings
-$body-bg-color: #FAFAFA;
+$body-bg-color: #E7E7EB;
 
 // Table settings
 $table-header-bg-color: transparent;
@@ -57,7 +57,7 @@ $button-variants: (
 );
 
 // Content header
-$content-header-bg: #FFFFFF;
+$content-header-bg: transparent;
 $content-header-color: $dark-text-default;
 
 // Tabs
@@ -73,7 +73,7 @@ $tabs-tab-hover-border-color: darken(#505660, 10%);
 
 // Vertical tabs
 $vertical-tabs-size: 240px;
-$vertical-tabs-bg: $body-bg-color;
+$vertical-tabs-bg: transparent;
 $vertical-tabs-color: #333;
 $vertical-tabs-active-bg: transparent;
 $vertical-tabs-active-color: #333;

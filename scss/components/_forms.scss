@@ -1,7 +1,7 @@
 %label {
     display: block;
     margin-bottom: 3px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .cke {
@@ -24,6 +24,11 @@
     }
 }
 
+.counter {
+    font-size: .85rem;
+}
+
+.counter,
 .description {
     margin-left: 3px;
     margin-top: 5px;
@@ -133,10 +138,13 @@
 }
 
 .form-item {
+    margin: 20px 0;
+
     td & {
         margin: 0;
     }
 
+    .counter,
     .description {
         color: $input-description-color;
     }
