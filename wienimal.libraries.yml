@@ -37,3 +37,9 @@ dropdown:
   dependencies:
     - core/jquery
     - core/drupal
+
+select2:
+  js:
+    js/select2.behaviors.js: {}
+  dependencies:
+    - wmlibraries/select2

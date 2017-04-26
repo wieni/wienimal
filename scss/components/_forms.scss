@@ -163,3 +163,29 @@
 .form-disabled {
     opacity: .65;
 }
+
+.select2 {
+    $border-color: 1px solid hsla(0,0%,5%,.15);
+    $height: 32px;
+
+    &-container {
+        &--default {
+            .select2-selection--single {
+                border: 1px solid $border-color;
+                border-radius: 0;
+
+                .select2-selection__rendered {
+                    line-height: $height;
+                }
+
+                .select2-selection__arrow {
+                    height: $height - 2px;
+                }
+            }
+        }
+
+        .select2-selection--single {
+            height: $height;
+        }
+    }
+}
