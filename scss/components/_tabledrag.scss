@@ -1,9 +1,13 @@
-a.tabledrag-handle .handle {
-    width: 25px;
-    height: 25px;
-    margin: 0;
-    padding: 0;
-    background-position: center center;
+.touchevents a.tabledrag-handle {
+    width: 30px;
+
+    .handle {
+        width: 40px;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        background-position: center center;
+    }
 }
 
 .draggable {
