@@ -12,6 +12,7 @@ $dropdown-icons: (
     'manage-form-display': '\f13d',
     'manage-display': '\f4d6',
     'storage-settings': $ionicon-var-soup-can,
+    'content-block': $ionicon-var-chatbubble,
 );
 
 .dropdown-menu {
@@ -20,6 +21,7 @@ $dropdown-icons: (
             position: relative;
 
             &::before {
+                content: $ionicon-var-gear-a;
                 display: inline-block;
                 font-family: "Ionicons";
                 speak: none;

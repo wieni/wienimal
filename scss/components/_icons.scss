@@ -14,4 +14,12 @@
     &--program::before {
         content: $ionicon-var-ios-lightbulb;
     }
+    &--published::before {
+        color: #27AE60;
+        content: $ionicon-var-ios-circle-filled;
+    }
+    &--unpublished::before {
+        color: #DB3F52;
+        content: $ionicon-var-ios-circle-outline;
+    }
 }

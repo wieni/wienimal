@@ -1,7 +1,12 @@
 .admin-overview {
     .views-table {
-        tr > td:first-of-type {
-            padding: 0;
+        .views-field-type {
+            padding: 0 5px;
+            width: 15px;
+        }
+
+        .views-field-status {
+            padding: 0 5px;
             width: 15px;
         }
     }

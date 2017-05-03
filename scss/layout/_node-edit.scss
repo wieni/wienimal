@@ -1,0 +1,11 @@
+.l-node-form {
+    display: flex;
+
+    &__main {
+        flex: .8;
+    }
+
+    &__details {
+        flex: .8;
+    }
+}
