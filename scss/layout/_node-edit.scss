@@ -3,9 +3,16 @@
 
     &__main {
         flex: .8;
+        background: #ffffff;
+
+        .form-actions {
+            margin-left: 20px;
+        }
     }
 
     &__details {
-        flex: .8;
+        flex: .2;
+        padding: 0 20px;
+        background: $body-bg-color;
     }
 }
