@@ -23,3 +23,11 @@ function wienimal_preprocess_page(&$variables) {
 
     $variables['show_breadcrumbs'] = $show_breadcrumbs;
 }
+
+function wienimal_preprocess_page__node__add(&$variables) {
+    $variables['no_space'] = TRUE;
+}
+
+function wienimal_preprocess_page__node__edit(&$variables) {
+    $variables['no_space'] = TRUE;
+}

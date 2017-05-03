@@ -6,8 +6,7 @@
 
 .tabs.primary {
     box-shadow: 0 1px 0 0 #E6E6E6;
-    border-bottom: 1px solid rgba(0,0,0, .1);
-    margin-bottom: -1px;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
 
 .tabs__trigger {
@@ -54,7 +53,8 @@
         background-color: $tabs-tab-bg-color;
         color: $tabs-tab-text-color;
         transition: all .2s ease-in-out;
-        
+        margin-bottom: -1px;
+
         &:hover,
         &:focus {
             text-decoration: none;
