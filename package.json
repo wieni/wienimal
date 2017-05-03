@@ -6,7 +6,9 @@
   "scripts": {
     "build-scss": "node-sass --include-path scss --output-style compressed --output css scss",
     "build-postcss": "postcss -r css/*",
-    "build": "yarn run build-scss && yarn run build-postcss"
+    "copy-select2": "cp -R node_modules/select2/dist vendor/select2",
+    "build": "yarn run build-scss && yarn run build-postcss & yarn run copy-select2"
+
   },
   "author": "",
   "license": "ISC",
@@ -32,5 +34,8 @@
       },
       "cssnano": {}
     }
+  },
+  "dependencies": {
+    "select2": "^4.0.3"
   }
 }

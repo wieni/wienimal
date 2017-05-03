@@ -38,6 +38,17 @@ dropdown:
     - core/jquery
     - core/drupal
 
+select2.behaviors:
+  js:
+    js/select2.behaviors.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - wienimal/select2
+
+# External libraries
+
 select2:
   remote: https://github.com/select2/select2
   version: "4.0.3"
@@ -45,13 +56,10 @@ select2:
     name: MIT
     url: https://github.com/select2/select2/blob/master/LICENSE.md
   js:
-    node_modules/select2/dist/js/select2.js: {}
-    node_modules/select2/dist/js/i18n/nl.js: {}
-    js/select2.behaviors.js: {}
+    vendor/select2/dist/js/select2.js: {}
+    vendor/select2/dist/js/i18n/nl.js: {}
   css:
     base:
       node_modules/select2/dist/css/select2.css: {}
   dependencies:
     - core/jquery
-    - core/drupal
-    - core/jquery.once

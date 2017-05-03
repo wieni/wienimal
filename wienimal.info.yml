@@ -23,6 +23,7 @@ libraries:
   - wienimal/adminimal-styling
   - wienimal/global-styling
   - wienimal/dropdown
+  - wienimal/select2.behaviors
 
 stylesheets-remove:
   - '@stable/css/node/node.module.css'
