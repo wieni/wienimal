@@ -21,9 +21,9 @@ $native-font-stack:
     "Helvetica Neue", Arial, sans-serif !default;
 
 // The base font family
-$base-font-family: $native-font-stack;
+$base-font-family: 'Overpass', $native-font-stack;
 // The alternative font family
-$alternative-font-family: $native-font-stack;
+$alternative-font-family: 'Overpass', $native-font-stack;
 
 // The default colors used in text.
 $dark-text-default: #333333 !default;

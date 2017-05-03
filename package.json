@@ -8,7 +8,6 @@
     "build-postcss": "postcss -r css/*",
     "copy-select2": "cp -R node_modules/select2/dist vendor/select2",
     "build": "yarn run build-scss && yarn run build-postcss"
-
   },
   "author": "",
   "license": "ISC",
@@ -36,6 +35,7 @@
     }
   },
   "dependencies": {
+    "dragula": "^3.7.2",
     "select2": "^4.0.3"
   }
 }

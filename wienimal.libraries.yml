@@ -5,8 +5,8 @@ global-styling:
   css:
     theme:
       css/wienimal.css: {}
-  # dependencies:
-  #  - wienimal/open-sans-font
+  dependencies:
+    - wienimal/overpass-font
 
 adminimal-styling:
   version: '1.0.0'
@@ -16,11 +16,11 @@ adminimal-styling:
 
 # Fonts
 
-open-sans-font:
+overpass-font:
   version: '1.0.0'
   css:
     base:
-      https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { external: true }
+      https://fonts.googleapis.com/css?family=Overpass:300,400,600,700: { external: true }
 
 ionicons:
   version: '2.0.1'
