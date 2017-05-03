@@ -6,6 +6,8 @@
 
 .tabs.primary {
     box-shadow: 0 1px 0 0 #E6E6E6;
+    border-bottom: 1px solid rgba(0,0,0, .1);
+    margin-bottom: -1px;
 }
 
 .tabs__trigger {
@@ -18,7 +20,6 @@
     display: block;
     font-weight: 500;
     font-size: 14px;
-    margin: 0 15px;
 
     &:first-child {
         margin-left: 0;
@@ -41,14 +42,14 @@
             &:hover,
             &:focus {
                 background-color: $tabs-tab-active-bg-color;
-                border-bottom-color: $tabs-tab-active-border-color;
+                border-bottom-color: lighten($tabs-tab-active-border-color, 5%);
             }
         }
     }
 
     > a {
         display: block;
-        padding: 10px 5px;
+        padding: 10px 15px;
         border-bottom: 1px solid $tabs-tab-border-color;
         background-color: $tabs-tab-bg-color;
         color: $tabs-tab-text-color;
@@ -58,7 +59,7 @@
         &:focus {
             text-decoration: none;
             background-color: $tabs-tab-hover-bg-color;
-            border-bottom-color: $tabs-tab-hover-border-color;
+            border-bottom-color: lighten($tabs-tab-active-border-color, 25%);
         }
     }
 }

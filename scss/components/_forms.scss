@@ -157,6 +157,11 @@
 
     .form-item {
         flex: 1;
+        margin: 0 10px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
     }
 }
 
