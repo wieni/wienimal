@@ -1,0 +1,17 @@
+.icon {
+    &::before {
+        @include ionicons;
+    }
+    &--article::before {
+        content: $ionicon-var-document-text;
+    }
+    &--video::before {
+        content: $ionicon-var-ios-videocam;
+    }
+    &--playlist::before {
+        content: $ionicon-var-ios-list;
+    }
+    &--program::before {
+        content: $ionicon-var-ios-lightbulb;
+    }
+}
