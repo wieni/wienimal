@@ -60,6 +60,6 @@ select2:
     vendor/select2/dist/js/i18n/nl.js: {}
   css:
     base:
-      node_modules/select2/dist/css/select2.css: {}
+      vendor/select2/dist/css/select2.css: {}
   dependencies:
     - core/jquery
