@@ -1,0 +1,14 @@
+.field--type-entity-reference {
+    tr {
+        border: 0 !important;
+    }
+
+    .field-label {
+        padding: 0;
+
+        .label {
+            font-weight: 600;
+            padding: 0 50px;
+        }
+    }
+}

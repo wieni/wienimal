@@ -1,6 +1,7 @@
 .entity-meta {
     border: 0;
     background-color: $vertical-tabs-bg;
+    box-shadow: none;
 
     details {
         border: 0;
@@ -9,6 +10,7 @@
 }
 
 .entity-meta__header {
+    padding: 0;
     border: 0;
     background-color: $vertical-tabs-bg;
 }

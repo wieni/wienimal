@@ -18,6 +18,7 @@
 <div class="l-node-form clearfix">
     <div class="l-node-form__main">
         {{ form|without('advanced', 'actions') }}
+        {{ form.actions }}
     </div>
     <div class="l-node-form__details">
         {{ form.actions }}
