@@ -48,7 +48,7 @@
             </button>
 
             <ul{{ attributes.addClass('dropdown-menu').removeClass('dropbutton') }}>
-                {%- for item in links -%}
+                {%- for item in links|slice(1, links.length) -%}
                     <li{{ item.attributes }}>
                         {%- if item.link -%}
                             {{ item.link }}
