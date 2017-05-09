@@ -1,4 +1,34 @@
 .admin-overview {
+    fieldset[data-drupal-selector="edit-field-publish-status-value"] {
+        display: block;
+        width: 100%;
+        flex: none;
+        margin-bottom: 20px;
+
+        .fieldset-wrapper {
+            @extend .form-text;
+        }
+    }
+
+    .form-item-field-publish-status-value-draft > label::after {
+        @include ionicons;
+
+        content: $ionicon-var-edit;
+        margin: 0 5px;
+    }
+    .form-item-field-publish-status-value-scheduled > label::after {
+        @include ionicons;
+        color: #ffaa46;
+        content: $ionicon-var-calendar;
+        margin: 0 5px;
+    }
+    .form-item-field-publish-status-value-published > label::after {
+        @include ionicons;
+        color: #27AE60;
+        content: $ionicon-var-checkmark;
+        margin: 0 5px;
+    }
+
     .views-table {
         .views-field-field-publish-status {
             padding: 0 5px;

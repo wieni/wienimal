@@ -1,7 +1,7 @@
 %label {
     display: block;
     margin-bottom: 3px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .cke {
@@ -55,6 +55,12 @@
 
     .fieldset-wrapper {
         margin-top: 15px;
+    }
+}
+
+.fieldset {
+    &-wrapper {
+        min-height: $input-height;
     }
 }
 
