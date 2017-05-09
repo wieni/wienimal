@@ -1,6 +1,7 @@
 .icon {
     &::before {
         @include ionicons;
+        text-align: center;
     }
     &--article::before {
         content: $ionicon-var-document-text;
@@ -14,20 +15,32 @@
     &--program::before {
         content: $ionicon-var-ios-lightbulb;
     }
+    &--stub::before {
+        content: $ionicon-var-link;
+    }
+    &--combined_tags::before {
+        content: $ionicon-var-pricetags;
+    }
+    &--scheduled::before {
+        color: #ffaa46;
+        content: $ionicon-var-calendar;
+    }
     &--published::before {
         color: #27AE60;
-        content: $ionicon-var-ios-circle-filled;
+        content: $ionicon-var-checkmark;
     }
-    &--unpublished::before {
-        color: #DB3F52;
-        content: $ionicon-var-ios-circle-outline;
+    &--draft::before {
+        content: $ionicon-var-edit;
     }
-    &__padded {
-        &--small::before {
-            padding-right: 10px;
-        }
-        &--big::before {
-            padding-right: 15px;
-        }
+    &--s::before {
+        width: 14px;
+        padding-right: 5px;
+    }
+    &--m::before {
+        padding-right: 10px;
+    }
+    &--l::before {
+        width: 28px;
+        margin-right: 10px;
     }
 }
