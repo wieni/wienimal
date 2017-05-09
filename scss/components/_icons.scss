@@ -22,4 +22,12 @@
         color: #DB3F52;
         content: $ionicon-var-ios-circle-outline;
     }
+    &__padded {
+        &--small::before {
+            padding-right: 10px;
+        }
+        &--big::before {
+            padding-right: 15px;
+        }
+    }
 }
