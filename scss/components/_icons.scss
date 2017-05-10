@@ -3,6 +3,11 @@
         @include ionicons;
         text-align: center;
     }
+
+    /*
+        CONTENT TYPES
+     */
+
     &--article::before {
         content: $ionicon-var-document-text;
     }
@@ -21,6 +26,43 @@
     &--combined_tags::before {
         content: $ionicon-var-pricetags;
     }
+
+    /*
+        CONTENT BLOCKS
+     */
+
+    &--text:before {
+        content: $ionicon-var-document-text;
+    }
+    &--call_to_action:before {
+        content: $ionicon-var-alert-circled;
+    }
+    &--faq:before {
+        content: $ionicon-var-help;
+    }
+    &--html_embed:before {
+        content: $ionicon-var-code;
+    }
+    &--image:before {
+        content: $ionicon-var-camera;
+    }
+    &--single_program:before {
+        content: $ionicon-var-image;
+    }
+    &--multiple_programs:before {
+        content: $ionicon-var-images;
+    }
+    &--quote:before {
+        content: $ionicon-var-quote;
+    }
+    &--section:before {
+        content: $ionicon-var-qr-scanner;
+    }
+
+    /*
+        PUBLISHING STATES
+     */
+
     &--scheduled::before {
         color: #ffaa46;
         content: $ionicon-var-calendar;
@@ -32,6 +74,11 @@
     &--draft::before {
         content: $ionicon-var-edit;
     }
+
+    /*
+        SIZES
+     */
+
     &--s::before {
         width: 14px;
         padding-right: 5px;
