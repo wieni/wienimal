@@ -31,3 +31,27 @@ function wienimal_preprocess_page__node__add(&$variables) {
 function wienimal_preprocess_page__node__edit(&$variables) {
     $variables['no_space'] = TRUE;
 }
+
+function wienimal_element_info_alter(&$cache) {
+    $cache['textfield']['#pre_render'][] = 'wienimal_maxlength_pre_render';
+    $cache['textarea']['#pre_render'][] = 'wienimal_maxlength_pre_render';
+    $cache['text_format']['#pre_render'][] = 'wienimal_maxlength_pre_render';
+}
+
+function wienimal_maxlength_pre_render($element) {
+    $label = '@remaining / @limit';
+
+    if (isset($element['#maxlength_js']) && $element['#maxlength_js'] === TRUE) {
+        if (isset($element['#attributes']['maxlength']) && $element['#attributes']['maxlength'] > 0) {
+            $element['#attributes']['maxlength_js_label'] = $label;
+            $element['#attached']['library'][] = 'wienimal/maxlength.behaviors';
+        }
+
+        if (isset($element['summary']['#attributes']['maxlength']) && $element['summary']['#attributes']['maxlength'] > 0) {
+            $element['summary']['#attributes']['maxlength_js_label'] = $label;
+            $element['summary']['#attached']['library'][] = 'wienimal/maxlength.behaviors';
+        }
+    }
+
+    return $element;
+}

@@ -48,6 +48,12 @@ select2.behaviors:
     - core/jquery.once
     - wienimal/select2
 
+maxlength.behaviors:
+  js:
+    js/maxlength.behaviors.js: {}
+  dependencies:
+    - core/jquery
+
 # External libraries
 
 select2:

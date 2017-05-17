@@ -25,13 +25,24 @@
 }
 
 .counter {
+    margin-top: 0;
+
+    position: absolute;
+    top: calc(1em - 4px);
+    right: 12px;
+
     font-size: .85rem;
+    pointer-events: none;
 }
 
 .counter,
 .description {
     margin-left: 3px;
     margin-top: 5px;
+}
+
+.maxlength-wrapper {
+    position: relative;
 }
 
 /**
