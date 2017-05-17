@@ -32,7 +32,6 @@
     right: 12px;
 
     font-size: .85rem;
-    pointer-events: none;
 }
 
 .counter,
@@ -214,4 +213,18 @@
             height: $input-height - 2px !important;
         }
     }
+}
+
+.field--name-field-publish-on,
+.field--name-field-unpublish-on {
+    width: auto;
+    float: left;
+}
+
+.field--name-field-publish-on {
+    margin-right: 30px;
+}
+
+.field--name-field-unpublish-on ~ .form-wrapper {
+    clear: left;
 }
