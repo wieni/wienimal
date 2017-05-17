@@ -24,6 +24,12 @@
     }
 }
 
+.counter,
+.description {
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
 .counter {
     margin-top: 0;
 
@@ -32,12 +38,6 @@
     right: 12px;
 
     font-size: .85rem;
-}
-
-.counter,
-.description {
-    margin-left: 3px;
-    margin-top: 5px;
 }
 
 .maxlength-wrapper {
