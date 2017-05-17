@@ -26,6 +26,9 @@
     &--combined_tags::before {
         content: $ionicon-var-pricetags;
     }
+    &--contest::before {
+        content: $ionicon-var-trophy;
+    }
 
     /*
         CONTENT BLOCKS
