@@ -24,14 +24,24 @@
     }
 }
 
-.counter {
-    font-size: .85rem;
-}
-
 .counter,
 .description {
     margin-left: 3px;
     margin-top: 5px;
+}
+
+.counter {
+    margin-top: 0;
+
+    position: absolute;
+    top: calc(1em - 4px);
+    right: 12px;
+
+    font-size: .85rem;
+}
+
+.maxlength-wrapper {
+    position: relative;
 }
 
 /**
@@ -203,4 +213,18 @@
             height: $input-height - 2px !important;
         }
     }
+}
+
+.field--name-field-publish-on,
+.field--name-field-unpublish-on {
+    width: auto;
+    float: left;
+}
+
+.field--name-field-publish-on {
+    margin-right: 30px;
+}
+
+.field--name-field-unpublish-on ~ .form-wrapper {
+    clear: left;
 }
