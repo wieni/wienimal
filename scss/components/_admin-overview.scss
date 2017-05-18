@@ -1,9 +1,10 @@
 .admin-overview {
     fieldset[data-drupal-selector="edit-field-publish-status-value"] {
         display: block;
-        width: 100%;
-        flex: none;
+        width: calc(30% + 24px);
+        margin-right: calc(70% - 24px);
         margin-bottom: 20px;
+        flex: none;
 
         legend {
             width: 100%;
