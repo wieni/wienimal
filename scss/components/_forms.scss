@@ -460,34 +460,33 @@
     clear: left;
 }
 
-.slug-widget {
-    &__prefix {
-        padding-left: 15px;
-        line-height: 37px;
+.field--widget-slug {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+
+    .slug-widget__prefix {
+        margin: 20px 0;
+        padding: 10px 0 10px 12px;
+        border: 1px solid rgba(0,0,0,.15);
+        border-right: none;
+        line-height: 1;
         font-weight: 600;
     }
 
-    .fieldset-wrapper {
-        display: flex;
-        align-items: flex-end;
-        margin: 0 0 20px;
-
-        border: 1px solid rgba(0,0,0,.15);
-    }
-
-    .form-item {
-        margin: 0;
-    }
-
-    .form-text {
+    input {
+        border-left: none;
         padding-left: 10px;
-        border: none;
+
+        &:hover {
+            color: rgba(51,51,51,.8);
+            border-color: rgba(0,0,0,.15);
+        }
     }
 
-    legend {
-        font-size: inherit !important;
-        font-weight: 600 !important;
-        border: none !important;
-        padding: 0 !important;
+    label {
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
