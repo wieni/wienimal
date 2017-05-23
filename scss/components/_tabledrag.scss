@@ -2,27 +2,41 @@
     width: 30px;
 }
 
-.touchevents {
+.draggable {
+    td:first-of-type {
+        padding: 0;
+        position: relative;
+    }
+
     a.tabledrag-handle {
+        text-decoration: none;
+        display: block;
+        height: auto;
+        padding: 10px;
+        margin: 0;
+        float: none;
+
         .handle {
-            width: 40px;
-            height: 44px;
+            width: 16px;
+            height: 16px;
             margin: 0;
             padding: 0;
-            background-position: center center;
+            background-position: 0 0;
+            background-size: 16px;
         }
     }
 
-    .draggable {
-        td:first-of-type {
-            display: flex;
-            align-items: center;
-        }
-    }
-}
-
-.draggable {
     .block {
         display: inline-flex;
     }
+
+    .warning.tabledrag-changed {
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 0;
+    }
+}
+
+.warning.tabledrag-changed {
+    text-decoration: none;
 }
