@@ -9,12 +9,17 @@
     }
 
     a.tabledrag-handle {
-        text-decoration: none;
-        display: block;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: content-box;
+        width: 16px;
+        height: 23px;
         padding: 10px;
         margin: 0;
-        float: none;
+
+        text-decoration: none;
 
         .handle {
             width: 16px;
