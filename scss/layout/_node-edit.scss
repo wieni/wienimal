@@ -5,8 +5,13 @@
         flex: .8;
         background: #ffffff;
 
+        > .form-wrapper {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
         .form-actions {
-            margin-left: 20px;
+            margin-bottom: 30px;
         }
     }
 

@@ -1,4 +1,6 @@
 .icon {
+    white-space: nowrap;
+
     &::before {
         @include ionicons;
         text-align: center;
