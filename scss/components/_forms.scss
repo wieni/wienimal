@@ -460,7 +460,7 @@
     clear: left;
 }
 
-.field--widget-slug {
+form:not(.field-config-form) .field--widget-slug {
     display: flex;
     position: relative;
     align-items: flex-end;
