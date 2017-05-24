@@ -460,14 +460,14 @@
     clear: left;
 }
 
-.field--widget-slug {
+form:not(.field-config-form) .field--widget-slug {
     display: flex;
     position: relative;
     align-items: flex-end;
 
     .slug-widget__prefix {
         margin: 20px 0;
-        padding: 10px 0 10px 12px;
+        padding: 10px 10px 10px 12px;
 
         line-height: 1;
         font-weight: 600;
