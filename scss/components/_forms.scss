@@ -60,7 +60,6 @@
         font-weight: 400;
         color: $input-label-color;
         border-bottom: 1px solid $input-border-color;
-        font-size: 24px;
     }
 
     .fieldset-wrapper {
@@ -139,8 +138,16 @@
     }
 }
 
+.form-wrapper {
+    margin: 0 0 20px 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 .form-item {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
 
     td & {
         margin: 0;
@@ -149,6 +156,10 @@
     .counter,
     .description {
         color: $input-description-color;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -227,266 +238,4 @@
 
 .field--name-field-unpublish-on ~ .form-wrapper {
     clear: left;
-}
-
-%label {
-    display: block;
-    margin-bottom: 3px;
-    font-weight: 600;
-}
-
-.cke {
-    border: 1px solid $input-border-color !important;
-}
-
-.form-composite > legend,
-.label {
-    @extend %label;
-    color: $input-label-color;
-}
-
-.field-suffix {
-    color: $input-description-color;
-    margin-left: 3px;
-    margin-top: 5px;
-
-    .machine-name-value {
-        font-style: italic;
-    }
-}
-
-.counter,
-.description {
-    margin-left: 3px;
-    margin-top: 5px;
-}
-
-.counter {
-    margin-top: 0;
-
-    position: absolute;
-    top: calc(1em - 4px);
-    right: 12px;
-
-    font-size: .85rem;
-}
-
-.maxlength-wrapper {
-    position: relative;
-}
-
-/**
- * Form types.
- */
-
-.field-group-tab fieldset,
-.field-group-fieldset {
-    border: 0;
-    padding: 0;
-
-    > legend {
-        display: block;
-        width: 100%;
-        padding-bottom: 10px;
-        font-weight: 400;
-        color: $input-label-color;
-        border-bottom: 1px solid $input-border-color;
-        font-size: 24px;
-    }
-
-    .fieldset-wrapper {
-        margin-top: 15px;
-    }
-}
-
-.fieldset {
-    &-wrapper {
-        min-height: $input-height;
-    }
-}
-
-.form-type-entity-autocomplete,
-.form-type-textfield,
-.form-type-number,
-.form-type-select,
-.form-type-email,
-.form-type-managed-file,
-.form-type-textarea {
-    > label {
-        @extend %label;
-        color: $input-label-color;
-        font-weight: 600;
-    }
-}
-
-.field--widget-imgix {
-    border: 1px solid gainsboro;
-    padding: 15px;
-    margin-bottom: 15px;
-
-    .form-item:first-child {
-        margin-top: 0;
-    }
-}
-
-.form-autocomplete,
-.form-text,
-.form-tel,
-.form-email,
-.form-url,
-.form-search,
-.form-number,
-.form-color,
-.form-file,
-.form-date,
-.form-time,
-.form-textarea,
-.form-search {
-    -webkit-appearance: none;
-    padding: 8px 12px;
-    width: 100%;
-    max-width: 100%;
-    border: 1px solid $input-border-color;
-    font-size: 1em;
-    line-height: 1;
-    background: #fff;
-    color: rgba($input-text-color, .8);
-    transition: all .2s ease-in-out;
-    box-sizing: border-box !important;
-
-    &:focus {
-        outline: 0;
-    }
-
-    &:focus,
-    &:hover {
-        color: $input-text-color;
-        border-color: $input-border-focus-color;
-        background-color: #fff;
-    }
-
-    td & {
-        width: 100%;
-    }
-}
-
-.form-item {
-    margin: 20px 0;
-
-    td & {
-        margin: 0;
-    }
-
-    .counter,
-    .description {
-        color: $input-description-color;
-    }
-}
-
-.form-file {
-    border: 0;
-    padding: 10px 0;
-
-    &:focus,
-    &:hover {
-        box-shadow: none;
-    }
-}
-
-.form-actions {
-    margin: 0 0 20px;
-}
-
-.form-disabled {
-    opacity: .65;
-}
-
-.form--inline {
-    margin-bottom: 20px;
-
-    .form-actions {
-        margin: 0;
-    }
-
-    .form-item {
-        flex: 1;
-        margin: 0 10px;
-
-        &:first-of-type {
-            margin-left: 0;
-        }
-    }
-}
-
-.form-select {
-    height: $input-height;
-}
-
-.select2 {
-    &-container {
-        width: 100% !important;
-
-        .select2-selection {
-            height: $input-height + 4px;
-            border: 1px solid $input-border-color !important;
-            border-radius: 0;
-        }
-
-        .select2-selection__choice {
-            line-height: 26px !important;;
-        }
-
-        .select2-selection__rendered {
-            line-height: $input-height !important;;
-        }
-
-        .select2-selection__arrow {
-            height: $input-height - 2px !important;
-        }
-    }
-}
-
-.field--name-field-publish-on,
-.field--name-field-unpublish-on {
-    width: auto;
-    float: left;
-}
-
-.field--name-field-publish-on {
-    margin-right: 30px;
-}
-
-.field--name-field-unpublish-on ~ .form-wrapper {
-    clear: left;
-}
-
-.field--widget-slug {
-    display: flex;
-    position: relative;
-    align-items: flex-end;
-
-    .slug-widget__prefix {
-        margin: 20px 0;
-        padding: 10px 0 10px 12px;
-        border: 1px solid rgba(0,0,0,.15);
-        border-right: none;
-        line-height: 1;
-        font-weight: 600;
-    }
-
-    input {
-        border-left: none;
-        padding-left: 10px;
-
-        &:hover {
-            color: rgba(51,51,51,.8);
-            border-color: rgba(0,0,0,.15);
-        }
-    }
-
-    label {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
 }

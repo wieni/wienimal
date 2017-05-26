@@ -1,3 +1,20 @@
 .content-block-form {
-    padding: 20px;
+    .form-actions {
+        margin: 20px 0 0 0;
+    }
+}
+
+.content-block-section-form {
+    width: calc(100% + 40px);
+
+    margin: -20px 0 0 -20px;
+    padding: 0;
+
+    .horizontal-tabs-list {
+        margin-bottom: 0;
+    }
+
+    .form-actions {
+        margin-left: 30px;
+    }
 }
