@@ -42,6 +42,11 @@
 
 .maxlength-wrapper {
     position: relative;
+
+    input.maxlength,
+    textarea.maxlength {
+        padding-right: 75px;
+    }
 }
 
 /**
@@ -87,6 +92,13 @@
     }
 }
 
+.form-type-radio,
+.form-type-checkbox {
+    .description {
+        margin-left: 3px;
+    }
+}
+
 .field--widget-imgix {
     border: 1px solid gainsboro;
     padding: 15px;
@@ -111,14 +123,19 @@
 .form-textarea,
 .form-search {
     -webkit-appearance: none;
-    padding: 8px 12px;
+    padding: 6px 12px;
     width: 100%;
     max-width: 100%;
+
     border: 1px solid $input-border-color;
+    border-radius: 4px;
+
     font-size: 1em;
     line-height: 1;
+
     background: #fff;
     color: rgba($input-text-color, .8);
+
     transition: all .2s ease-in-out;
     box-sizing: border-box !important;
 
@@ -174,7 +191,16 @@
 }
 
 .form-actions {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
     margin: 0 0 20px;
+
+    > * {
+        margin: 0 5px 0 0;
+    }
 }
 
 .form-disabled {

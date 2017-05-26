@@ -1,45 +1,9 @@
 .admin-overview {
     fieldset[data-drupal-selector="edit-field-publish-status-value"] {
         display: block;
-        width: calc(30% + 24px);
-        margin-right: calc(70% - 24px);
-        margin-bottom: 20px;
+        width: 100%;
+
         flex: none;
-
-        legend {
-            width: 100%;
-            margin: 0;
-
-            border: 1px solid #d9d9d9;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-
-            background-color: #ebedef;
-
-            line-height: 1;
-
-            & ~ .fieldset-wrapper {
-                border-top: none;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-            }
-        }
-
-        .fieldset {
-            &-legend {
-                display: block;
-            }
-
-            &-wrapper {
-                border: 1px solid #d9d9d9;
-                border-radius: 3px;
-            }
-
-            &-legend,
-            &-wrapper {
-                padding: 15px 15px 10px;
-            }
-        }
 
         .fieldgroup {
             display: flex;

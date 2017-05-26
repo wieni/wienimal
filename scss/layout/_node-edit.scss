@@ -11,7 +11,7 @@
     display: flex;
 
     &__main {
-        flex: .8;
+        width: 700px;
         background: #ffffff;
 
         > .form-wrapper {
@@ -25,7 +25,8 @@
     }
 
     &__details {
-        flex: .2;
+        width: calc(100% - 700px);
+
         padding: 0 20px;
         background: $body-bg-color;
     }
