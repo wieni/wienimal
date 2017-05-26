@@ -1,5 +1,29 @@
 .ajax-progress-throbber {
-    padding: 50px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    margin-left: .5em;
+    padding: 0;
+
+    .throbber {
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        width: 1em;
+        height: 1em;
+
+        margin-right: .5em;
+        padding: 0;
+    }
+
+    .message {
+        padding: 0;
+
+        font-size: 1em;
+        white-space: nowrap;
+    }
 }
 
 .ajax-progress-fullscreen {

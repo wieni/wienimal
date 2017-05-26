@@ -232,10 +232,13 @@
     &-container {
         width: 100% !important;
 
+        outline: none !important;
+
         .select2-selection {
-            height: $input-height + 4px;
+            height: 36px;
+
             border: 1px solid $input-border-color !important;
-            border-radius: 0;
+            border-radius: 4px;
         }
 
         .select2-selection__choice {
