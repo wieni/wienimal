@@ -235,6 +235,8 @@ input:read-only {
     .form-item {
         flex: 1;
 
+        margin: 0;
+
         &:not(:last-child) {
             margin-right: 15px;
         }

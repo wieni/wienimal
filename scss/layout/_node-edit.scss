@@ -7,6 +7,37 @@
     }
 }
 
+.node-form {
+    position: relative;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    background-color: $body-bg-color;
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 0; bottom: 0;
+
+        width: 100vw;
+
+        background-color: $body-bg-color;
+    }
+
+    &::before {
+        right: 100%;
+    }
+
+    &::after {
+        left: 100%;
+    }
+}
+
 .l-node-form {
     display: flex;
     flex-direction: row;
@@ -14,7 +45,6 @@
     align-items: flex-start;
 
     width: 100%;
-    max-width: 1280px;
 
     background-color: $body-bg-color;
 
