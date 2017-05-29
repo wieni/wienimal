@@ -1,0 +1,28 @@
+.field--widget-slug {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    .slug-widget__prefix {
+        margin: 20px 0 0;
+        padding: 10px 10px 10px 0;
+
+        line-height: 1;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    input {
+        &:hover {
+            color: rgba(51,51,51,.8);
+            border-color: rgba(0,0,0,.15);
+        }
+    }
+
+    label {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
