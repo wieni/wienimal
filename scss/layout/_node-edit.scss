@@ -11,9 +11,7 @@
     position: relative;
 
     width: 100%;
-    max-width: 1000px;
-
-    margin: 0 auto;
+    max-width: 1050px;
 
     background-color: $body-bg-color;
 
@@ -49,7 +47,7 @@
     background-color: $body-bg-color;
 
     &__main {
-        width: calc(100% - 250px);
+        width: calc(100% - 300px);
 
         background: #ffffff;
 
@@ -64,9 +62,13 @@
     }
 
     &__details {
-        width: 250px;
+        width: 300px;
 
         padding: 0 20px;
         background: $body-bg-color;
+
+        .inline {
+            display: inline;
+        }
     }
 }
