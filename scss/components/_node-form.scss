@@ -4,6 +4,8 @@
     }
 }
 
+.settings-homepage-edit-form,
+.settings-watch-online-edit-form,
 .content-block-section-form {
     width: calc(100% + 40px);
 
@@ -16,5 +18,17 @@
 
     .form-actions {
         margin-left: 30px;
+    }
+}
+
+.settings-program-overview-edit-form {
+    fieldset {
+        padding: 0;
+
+        border: none;
+
+        legend {
+            display: none;
+        }
     }
 }
