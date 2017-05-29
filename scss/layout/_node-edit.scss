@@ -9,9 +9,18 @@
 
 .l-node-form {
     display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 1280px;
+
+    background-color: $body-bg-color;
 
     &__main {
-        width: 700px;
+        width: calc(100% - 250px);
+
         background: #ffffff;
 
         > .form-wrapper {
@@ -25,7 +34,7 @@
     }
 
     &__details {
-        width: calc(100% - 700px);
+        width: 250px;
 
         padding: 0 20px;
         background: $body-bg-color;

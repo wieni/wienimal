@@ -6,6 +6,9 @@
 
 .cke {
     border: 1px solid $input-border-color !important;
+    border-radius: 4px;
+
+    overflow: hidden;
 }
 
 .form-composite > legend,
@@ -100,9 +103,11 @@
 }
 
 .field--widget-imgix {
-    border: 1px solid gainsboro;
     padding: 15px;
     margin-bottom: 15px;
+
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
 
     .form-item:first-child {
         margin-top: 0;
@@ -161,6 +166,21 @@
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.form-item,
+.field--type-imgix,
+.field--name-field-slug,
+.field--name-field-video-length {
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 700px;
+}
+
+.form-item.form-type-checkbox {
+    width: auto;
+    max-width: none;
 }
 
 .form-item {
@@ -242,8 +262,10 @@
         }
 
         .select2-selection__choice {
-            margin-top: 3px !important;
+            margin-top: 4px !important;
             line-height: 26px !important;
+
+            border: none !important;
         }
 
         .select2-selection__rendered {
@@ -296,4 +318,12 @@ form:not(.field-config-form) .field--widget-slug {
         left: 0;
         top: 0;
     }
+}
+
+input:read-only,
+input:read-only:hover,
+input:read-only:active,
+input:read-only:focus {
+    background: #f5f5f5;
+    cursor: not-allowed;
 }
