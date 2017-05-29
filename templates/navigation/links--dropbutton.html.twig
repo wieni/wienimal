@@ -60,6 +60,6 @@
             </ul>
         </div>
     {% else %}
-        <a class="button" href="{{ links|first.link['#url'] }}">{{ links|first.text }}</a>
+        <a class="button button--table" href="{{ links|first.link['#url'] }}">{{ links|first.text }}</a>
     {% endif %}
 {%- endif %}

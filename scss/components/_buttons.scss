@@ -52,6 +52,13 @@
     font-size: 14px;
 }
 
+.button--table {
+    font-size: 12px;
+    padding: 4px 10px;
+
+    border-bottom-color: #363d44;
+}
+
 @each $name, $color in $button-variants {
     .button--#{$name} {
         background-color: $color !important;
