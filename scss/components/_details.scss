@@ -1,0 +1,39 @@
+details {
+    margin: 0;
+    border: none;
+
+    summary {
+        position: relative;
+        padding: 10px 0 10px 20px;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            left: 0; top: calc(50% - 4px);
+
+            display: inline-block;
+
+            border-style: solid;
+            border-color: transparent transparent transparent currentColor;
+            border-width: 4px 0 4px 5px;
+
+            transition: transform .3s ease;
+        }
+
+        &::-webkit-details-marker {
+            display:none;
+        }
+    }
+
+    .details-wrapper {
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    &[open] {
+        summary::before {
+            transform: rotate(90deg);
+        }
+    }
+}
