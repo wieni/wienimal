@@ -17,6 +17,12 @@
             display: inline-block;
             vertical-align: middle;
         }
+
+        &.empty {
+            padding: 0;
+
+            font-size: 12px;
+        }
     }
 }
 
