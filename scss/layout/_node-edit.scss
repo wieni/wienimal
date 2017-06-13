@@ -74,6 +74,17 @@
         .inline {
             display: inline;
         }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+
+            align-items: flex-start;
+
+            > *:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 
