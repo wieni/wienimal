@@ -13,7 +13,9 @@
     &--article::before {
         content: $ionicon-var-document-text;
     }
-    &--video::before {
+    &--video::before,
+    &--video_long_form::before,
+    &--video_short_form::before {
         content: $ionicon-var-ios-videocam;
     }
     &--playlist::before {
