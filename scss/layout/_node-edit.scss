@@ -141,7 +141,7 @@
     }
 }
 
-.settings-form {
+.settings-form:not(.settings-program-overview-edit-form) {
     .form-wrapper {
         margin: 0;
     }
