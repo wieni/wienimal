@@ -1,4 +1,14 @@
 .field--type-entity-reference {
+    max-width: none;
+
+    padding: 0;
+
+    border: none;
+
+    legend {
+        display: none;
+    }
+
     tr {
         border: 0 !important;
     }
@@ -23,18 +33,6 @@
 
             font-size: 12px;
         }
-    }
-}
-
-#edit-field-contest-node {
-    max-width: none;
-
-    padding: 0;
-
-    border: none;
-
-    legend {
-        display: none;
     }
 
     th:first-child,

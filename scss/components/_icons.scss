@@ -13,8 +13,17 @@
     &--article::before {
         content: $ionicon-var-document-text;
     }
+    &--page::before {
+        content: $ionicon-var-document-text;
+    }
     &--video::before {
         content: $ionicon-var-ios-videocam;
+    }
+    &--video_long_form::before {
+        content: $ionicon-var-social-youtube;
+    }
+    &--video_short_form::before {
+        content: $ionicon-var-social-youtube-outline;
     }
     &--playlist::before {
         content: $ionicon-var-ios-list;
