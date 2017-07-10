@@ -9,17 +9,21 @@
     'components/admin-list',
     'components/admin-overview',
     'components/ajax-progress',
+    'components/autocomplete',
     'components/breadcrumb',
     'components/container-inline',
     'components/content-header',
     'components/dropdown',
+    'components/details',
     'components/dropdown-group',
     'components/dropdown.icons',
     'components/entity-meta',
     'components/entity-reference',
     'components/forms',
+    'components/form-elements/index',
     'components/node-form',
     'components/panel',
+    'components/multi-table',
     'components/tabledrag',
     'components/tables',
     'components/tabs',
@@ -36,10 +40,6 @@
 
 .tabledrag-toggle-weight-wrapper {
     display: none;
-}
-
-#edit-cancel {
-    margin-left: 5px;
 }
 
 .js input.form-autocomplete {

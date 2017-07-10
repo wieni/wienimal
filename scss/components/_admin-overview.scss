@@ -1,45 +1,10 @@
 .admin-overview {
     fieldset[data-drupal-selector="edit-field-publish-status-value"] {
         display: block;
-        width: calc(30% + 24px);
-        margin-right: calc(70% - 24px);
-        margin-bottom: 20px;
+        width: 100%;
+        max-width: none;
+
         flex: none;
-
-        legend {
-            width: 100%;
-            margin: 0;
-
-            border: 1px solid #d9d9d9;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-
-            background-color: #ebedef;
-
-            line-height: 1;
-
-            & ~ .fieldset-wrapper {
-                border-top: none;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-            }
-        }
-
-        .fieldset {
-            &-legend {
-                display: block;
-            }
-
-            &-wrapper {
-                border: 1px solid #d9d9d9;
-                border-radius: 3px;
-            }
-
-            &-legend,
-            &-wrapper {
-                padding: 15px 15px 10px;
-            }
-        }
 
         .fieldgroup {
             display: flex;
@@ -72,17 +37,39 @@
 
     .views-table {
         .views-field-field-publish-status {
-            padding: 0 5px;
             width: 15px;
         }
 
         .views-field-status {
-            padding: 0 5px;
             width: 15px;
         }
     }
 
     td {
         vertical-align: top;
+
+        &:nth-child(2) {
+            width: 350px;
+        }
+
+        &:nth-child(3) {
+            width: 115px;
+        }
+
+        &:nth-child(4) {
+            width: 300px;
+        }
+
+        &:nth-child(5) {
+            width: 150px;
+        }
+
+        &:nth-child(6) {
+            width: 125px;
+        }
+
+        &:nth-child(7) {
+            width: 100px;
+        }
     }
 }

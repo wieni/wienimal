@@ -1,0 +1,33 @@
+.select2 {
+    &-container {
+        width: 100% !important;
+
+        outline: none !important;
+
+        .select2-selection {
+            min-height: 36px;
+
+            border: 1px solid $input-border-color !important;
+            border-radius: 4px;
+        }
+
+        .select2-selection__choice {
+            margin-top: 4px !important;
+            line-height: 26px !important;
+
+            border: none !important;
+        }
+
+        .select2-selection__rendered {
+            line-height: $input-height !important;;
+        }
+
+        .select2-selection__arrow {
+            height: $input-height - 2px !important;
+        }
+
+        .select2-search--inline {
+            line-height: 1;
+        }
+    }
+}
